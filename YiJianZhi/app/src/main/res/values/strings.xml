@@ -3,5 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
     <string name="title_activity_shanping">ShanpingActivity</string>
+=======
+    <string name="title_activity_zhu_ce">ZhuCeActivity</string>
+>>>>>>> xuxu_repositories
 </resources>
