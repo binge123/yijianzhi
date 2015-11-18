@@ -3,7 +3,18 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
+    <string name="title_activity_recruit">RecruitActivity</string>
+=======
+<<<<<<< HEAD
     <string name="title_activity_shanping">ShanpingActivity</string>
+<<<<<<< HEAD
     <string name="title_activity_splashscreen">Splashscreen</string>
     <string name="title_activity_guidepage">Guidepage</string>
+=======
+=======
+    <string name="title_activity_zhu_ce">ZhuCeActivity</string>
+>>>>>>> xuxu_repositories
+>>>>>>> 665ddd88d1c991eaa524da96d6f84739d82702bd
+>>>>>>> 5b09122c882fa9d829cfb943f5efc9336505ce53
 </resources>
