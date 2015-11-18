@@ -20,6 +20,14 @@
             android:name=".ShanpingActivity"
             android:label="@string/title_activity_shanping" >
         </activity>
+        <activity
+            android:name=".Splashscreen"
+            android:label="@string/title_activity_splashscreen" >
+        </activity>
+        <activity
+            android:name=".Guidepage"
+            android:label="@string/title_activity_guidepage" >
+        </activity>
     </application>
 
 </manifest>
