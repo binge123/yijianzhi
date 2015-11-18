@@ -1,16 +1,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context=".MainActivity">
+
     <include android:id="@+id/toolbar"
     layout="@layout/layout_toolbar"/>
 
     <RadioGroup
         android:id="@+id/rg"
         android:orientation="horizontal"
+        android:background="#F6F6F6"
         android:layout_width="match_parent"
         android:layout_height="53dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp">
 
         <RadioButton
             android:id="@+id/radioButton1"
