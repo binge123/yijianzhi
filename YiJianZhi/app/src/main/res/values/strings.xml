@@ -3,12 +3,10 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-<<<<<<< HEAD
     <string name="title_activity_recruit">RecruitActivity</string>
-=======
-<<<<<<< HEAD
+
     <string name="title_activity_shanping">ShanpingActivity</string>
-<<<<<<< HEAD
+
     <string name="title_activity_splashscreen">Splashscreen</string>
     <string name="title_activity_guidepage">Guidepage</string>
 =======
