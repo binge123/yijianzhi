@@ -11,11 +11,6 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/MyActionBar" >
-
-        </activity>
-        <activity
-            android:name=".ZhuCeActivity"
-            android:label="@string/title_activity_zhu_ce" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,13 +18,17 @@
             </intent-filter>
         </activity>
         <activity
-<<<<<<< HEAD
+            android:name=".ZhuCeActivity"
+            android:label="@string/title_activity_zhu_ce" >
+
+        </activity>
+        <activity
             android:name=".RecruitActivity"
             android:label="@string/title_activity_recruit" >
-=======
+        </activity>
+        <activity
             android:name=".ShanpingActivity"
             android:label="@string/title_activity_shanping" >
->>>>>>> 665ddd88d1c991eaa524da96d6f84739d82702bd
         </activity>
     </application>
 

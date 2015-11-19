@@ -3,13 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:background="?attr/colorPrimary">
+    android:background="#3191E8">
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/fanhui"/>
+    android:layout_height="wrap_content"
+    android:background="@drawable/fanhui"/>
     </RelativeLayout>
 </android.support.v7.widget.Toolbar>

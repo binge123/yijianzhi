@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="blue1">#3191E8</color>
+    <color name="blue1">#5CABE3</color>
     <color name="blue2">#000</color>
     <color name="green">#FD87A9</color>
+    <!-- 注册页面 -->
+    <color name="hint_username">#C9C3C3</color>
+    <color name="hint_password">#C9C3C3</color>
+    <color name="send_verification_code">#FFFFFF</color>
+    <color name="consent_clause">#94918A</color>
+    <color name="input_verification_code">#C9C3C3</color>
 </resources>
