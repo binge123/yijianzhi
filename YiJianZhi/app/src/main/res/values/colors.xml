@@ -9,4 +9,12 @@
     <color name="send_verification_code">#FFFFFF</color>
     <color name="consent_clause">#94918A</color>
     <color name="input_verification_code">#C9C3C3</color>
+    <color name="first_gridview_remen">#EC655F</color>
+    <color name="first_gridview_fujin">#EFEBE2</color>
+    <color name="first_gridview_xianshi">#36D7B6</color>
+    <color name="first_gridview_gengduo">#80D4EE</color>
+    <color name="first_gridview_xiaozi">#000</color>
+    <color name="first_gridview_back">#94918A</color>
+    <color name="first_gridview_adapter">#fff</color>
+
 </resources>

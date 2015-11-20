@@ -9,7 +9,24 @@
         android:layout_height="wrap_content">
         <ImageView
             android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/fanhui"/>
+            android:layout_height="wrap_content"
+            android:background="@drawable/fanhui"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/first_pressed"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="临沂市"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
     </RelativeLayout>
 </android.support.v7.widget.Toolbar>

@@ -12,5 +12,14 @@
     <string name="send_verification_code">发送验证码</string>
     <string name="consent_clause">同意条款</string>
     <string name="input_verification_code">请输入验证码</string>
+    <string name="first_remen">热门招聘</string>
+    <string name="first_remen1">小伙伴们都在找这些</string>
+    <string name="first_fujin">附近招聘</string>
+    <string name="first_fujin1">附近有什么招聘</string>
+    <string name="first_xianshi">限时招聘</string>
+    <string name="first_xianshi1">亲，再不来就没啦！</string>
+    <string name="first_gengduo">更多</string>
+    <string name="first_gengduo1">更多功能</string>
+    <string name="first_tuijian">推荐招聘</string>
 
 </resources>
