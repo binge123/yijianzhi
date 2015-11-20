@@ -27,9 +27,13 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingLeft="20dp"
+<<<<<<< HEAD
         android:layout_marginTop="40dp"
         android:gravity="center_vertical"
         android:hint="请输入账号"
+=======
+        android:hint="@string/hint_username"
+>>>>>>> develop
         android:background="#fff"
         android:id="@+id/denglu_zhanghao"
         android:layout_below="@id/rl"/>
@@ -37,9 +41,13 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingLeft="20dp"
+<<<<<<< HEAD
         android:layout_marginTop="1dp"
         android:gravity="center_vertical"
         android:hint="请输入密码"
+=======
+        android:hint="@string/hint_password"
+>>>>>>> develop
         android:background="#fff"
         android:layout_below="@id/denglu_zhanghao"/>
 

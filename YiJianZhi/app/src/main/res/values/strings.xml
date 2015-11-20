@@ -1,23 +1,17 @@
 <resources>
     <string name="app_name">YiJianZhi</string>
-
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
     <string name="title_activity_recruit">RecruitActivity</string>
-=======
-<<<<<<< HEAD
->>>>>>> develop
     <string name="title_activity_shanping">ShanpingActivity</string>
     <string name="title_activity_zhu_ce">ZhuCeActivity</string>
-<<<<<<< HEAD
-=======
+    <!-- 注册页面 -->
+    <string name="hint_username">请输入手机号</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="send_verification_code">发送验证码</string>
+    <string name="consent_clause">同意条款</string>
+    <string name="input_verification_code">请输入验证码</string>
+    <string name="my_zhuangtai">登录/注册</string>
 
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
->>>>>>> xuxu_repositories
->>>>>>> 665ddd88d1c991eaa524da96d6f84739d82702bd
->>>>>>> develop
 </resources>
