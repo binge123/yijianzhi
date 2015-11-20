@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:gravity="center"
-            android:text="发布招聘"
+            android:text="个人简历"
             android:textSize="20sp"
             android:textColor="#fff"/>
     </RelativeLayout>
@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="薪资："
+                android:text="姓名："
                 android:textColor="#8F8D8E"
                 android:textSize="18sp"
                 android:id="@+id/Tv2" />
@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="地址："
+                android:text="性别："
                 android:textColor="#8F8D8E"
                 android:textSize="18sp"
                 android:id="@+id/Tv3" />
@@ -105,7 +105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="职位："
+            android:text="年龄："
             android:textColor="#8F8D8E"
             android:textSize="18sp"
             android:id="@+id/Tv4"
@@ -137,7 +137,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="联系人："
+            android:text="地址："
             android:textColor="#8F8D8E"
             android:textSize="18sp"
             android:id="@+id/Tv5" />
@@ -146,7 +146,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginLeft="17dp"
+            android:layout_marginLeft="35dp"
             android:layout_alignBottom="@+id/Tv5"
             android:layout_toRightOf="@+id/Tv5"
             android:layout_alignParentRight="true"
@@ -166,7 +166,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="公司名："
+            android:text="工作经验："
             android:textColor="#8F8D8E"
             android:textSize="18sp"
             android:id="@+id/Tv6" />
@@ -175,7 +175,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginLeft="17dp"
             android:layout_alignBottom="@+id/Tv6"
             android:layout_toRightOf="@+id/Tv6"
             android:layout_alignParentRight="true"
@@ -195,7 +194,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="联系方式："
+                android:text="求职职位："
                 android:textColor="#8F8D8E"
                 android:textSize="18sp"
                 android:id="@+id/Tv7" />
@@ -223,7 +222,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="职位介绍："
+                android:text="期望薪资："
                 android:textColor="#8F8D8E"
                 android:textSize="18sp"
                 android:id="@+id/Tv8" />
