@@ -1,5 +1,6 @@
 package com.best.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -8,7 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.best.adapter.ShouCangAdapter;
+import com.best.demo.yijianzhi.LoginActivity;
+import com.best.demo.yijianzhi.MyFaBuActivity;
 import com.best.demo.yijianzhi.R;
+import com.best.demo.yijianzhi.ShouCangActivity;
+import com.best.demo.yijianzhi.ZiLiaoActivity;
 
 /**
  * FirstFragment  我的框架
@@ -29,6 +35,39 @@ public class MyFragment extends Fragment {
         l4 = (LinearLayout) v.findViewById(R.id.my_fajianli);
         l5 = (LinearLayout) v.findViewById(R.id.my_fazhaopin);
         l6 = (LinearLayout) v.findViewById(R.id.my_denglu);
+        l1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), ShouCangActivity.class);
+                i.putExtra("zhanghao",12);
+                startActivity(i);
+            }
+        });
+        l2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), ZiLiaoActivity.class);
+                i.putExtra("zhanghao",12);
+                startActivity(i);
+            }
+        });
+        l3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), MyFaBuActivity.class);
+                i.putExtra("zhanghao",12);
+                startActivity(i);
+            }
+        });
+
+
+        l6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), LoginActivity.class);
+                startActivity(i);
+            }
+        });
         return v;
     }
 }

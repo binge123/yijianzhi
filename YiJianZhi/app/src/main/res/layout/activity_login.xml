@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-< RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#EDEDEB">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDEB"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout
-        android:id="@+id/rl"
+        android:id="@+id/logo_rl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
@@ -27,35 +29,27 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingLeft="20dp"
-<<<<<<< HEAD
-        android:layout_marginTop="40dp"
         android:gravity="center_vertical"
-        android:hint="请输入账号"
-=======
         android:hint="@string/hint_username"
->>>>>>> develop
         android:background="#fff"
         android:id="@+id/denglu_zhanghao"
-        android:layout_below="@id/rl"/>
+        android:layout_below="@id/logo_rl"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingLeft="20dp"
-<<<<<<< HEAD
         android:layout_marginTop="1dp"
         android:gravity="center_vertical"
-        android:hint="请输入密码"
-=======
         android:hint="@string/hint_password"
->>>>>>> develop
+        android:id="@+id/denglu_mima"
         android:background="#fff"
         android:layout_below="@id/denglu_zhanghao"/>
-
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/denglu_anniu"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/denglu_mima"
+        android:layout_marginTop="50dp"
         android:background="@drawable/denglubtn"
         android:layout_centerHorizontal="true" />
     <TextView
