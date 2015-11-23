@@ -1,65 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-=======
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-    <RelativeLayout
-        android:id="@+id/rl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:background="#3191E8">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/fanhui"/>
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:text="登录"
-            android:textSize="20sp"
-            android:textColor="#fff"/>
-    </RelativeLayout>
-
-    <FrameLayout
-=======
-
-<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--android:layout_width="match_parent" android:layout_height="match_parent">-->
-
-<!--<RelativeLayout -->
-    <!--android:layout_width="match_parent" android:layout_height="match_parent">-->
-    <!--<RelativeLayout-->
-        <!--android:id="@+id/rl"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:paddingTop="8dp"-->
-        <!--android:paddingBottom="8dp"-->
-        <!--android:background="#3191E8">-->
-        <!--<ImageView-->
-            <!--android:layout_width="40dp"-->
-            <!--android:layout_height="40dp"-->
-            <!--android:layout_marginLeft="20dp"-->
-            <!--android:background="@drawable/fanhui"/>-->
-        <!--<TextView-->
-            <!--android:id="@+id/textView"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="40dp"-->
-            <!--android:gravity="center"-->
-            <!--android:text="登录"-->
-            <!--android:textSize="20sp"-->
-            <!--android:textColor="#fff"/>-->
-    <!--</RelativeLayout>-->
-<!--</RelativeLayout>-->
 <FrameLayout
->>>>>>> xuxu_repositories
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -288,13 +228,9 @@
                     android:textColor="#DCA5E6"
                     android:textSize="16sp"
                     android:id="@+id/textView9" />
-
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
-<<<<<<< HEAD
 </FrameLayout>
-</RelativeLayout>
-=======
-</FrameLayout>
->>>>>>> xuxu_repositories
+
+
