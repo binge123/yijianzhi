@@ -2,6 +2,10 @@ package com.best.demo.yijianzhi;
 
 
 import android.app.Activity;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 478cd3e3de3e56f733aefc66a2f118eec7a7b265
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
