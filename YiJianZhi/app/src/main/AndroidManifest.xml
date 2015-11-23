@@ -34,7 +34,22 @@
             android:label="LoginActivity">
 
         </activity>
+        <activity android:name=".ShouCangActivity"
+            android:label="ShouCangActivity">
 
+        </activity>
+        <activity android:name=".MyFaBuActivity"
+            android:label="MyFaBuActivity">
+
+        </activity>
+        <activity android:name=".QiuZhiActivity"
+            android:label="QiuZhiActivity">
+
+        </activity>
+        <activity android:name=".ZiLiaoActivity"
+            android:label="ZiLiaoActivity">
+
+        </activity>
     </application>
 
 </manifest>

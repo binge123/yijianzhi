@@ -16,6 +16,5 @@ public class ShouCangActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shoucang);
         listView = (ListView) findViewById(R.id.shoucang_list);
-
     }
 }

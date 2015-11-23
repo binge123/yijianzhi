@@ -2,32 +2,25 @@
 <items version="2" >
 
     <item
-        jar="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jar="C:\Users\Administrator.WIN-OU8RQGJIKK8\.gradle\caches\modules-2\files-2.1\cn.bmob.android\bmob-sdk\3.4.5\44e559d18fd5a4826b0a4c0354308213e4f658a2\bmob-sdk-3.4.5.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\pre-dexed\debug\classes-1c1b04dd0e1f8f6a86f87b1d704d2807e9929790.jar" />
+        sha1="44e559d18fd5a4826b0a4c0354308213e4f658a2">
+        <dex dex="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\pre-dexed\debug\bmob-sdk-3.4.5-875d76c3d842f7cf443e18c6b5df2b9195bcbf3f.jar" />
     </item>
     <item
-        jar="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jar="C:\Users\Administrator.WIN-OU8RQGJIKK8\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.4.0\40340c0748190fe897baf7bffbc1b282734294e5\okhttp-2.4.0.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-082fd0f7e2961a116a01c210dac0399aa82581b4.jar" />
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\pre-dexed\debug\okhttp-2.4.0-ee64fbf8e43b42094ad59c099ee4a700f62b4bbd.jar" />
     </item>
     <item
-        jar="D:\Users\Administrator.WIN-OU8RQGJIKK8\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jar="C:\Users\Administrator.WIN-OU8RQGJIKK8\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.4.0\5b72bf48563ea8410e650de14aa33ff69a3e8c35\okio-1.4.0.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-9eb2c730dab9e2812901ff152ff424f0cf33869c.jar" />
-    </item>
-    <item
-        jar="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
-        <dex dex="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\pre-dexed\debug\classes-adc501906da1aaf854c281822b23d6c9e35016b9.jar" />
+        sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
+        <dex dex="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\pre-dexed\debug\okio-1.4.0-2026352ec23b6a4f92a0b96f146be66bc8a08ef3.jar" />
     </item>
 
 </items>
