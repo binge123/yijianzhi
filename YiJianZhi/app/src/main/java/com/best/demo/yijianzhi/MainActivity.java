@@ -1,5 +1,6 @@
 package com.best.demo.yijianzhi;
 
+import android.app.Activity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import com.best.fragment.FirstFragment;
 import com.best.fragment.MyFragment;
 import com.best.fragment.QiuZhiFragment;
 import com.best.fragment.ZhaoPinFragment;
+
 
 /**
  * MainActivity   主框架

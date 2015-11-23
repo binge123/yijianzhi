@@ -1,11 +1,11 @@
 package com.best.demo.yijianzhi;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class ShanpingActivity extends AppCompatActivity {
+public class ShanpingActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

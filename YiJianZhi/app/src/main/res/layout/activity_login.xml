@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDEB"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout
-        android:id="@+id/rl"
+        android:id="@+id/logo_rl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
@@ -26,23 +29,46 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingLeft="20dp"
-        android:hint="请输入账号"
+        android:gravity="center_vertical"
+        android:hint="@string/hint_username"
         android:background="#fff"
         android:id="@+id/denglu_zhanghao"
-        android:layout_below="@id/rl"/>
+        android:layout_below="@id/logo_rl"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingLeft="20dp"
-        android:hint="请输入密码"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:hint="@string/hint_password"
+        android:id="@+id/denglu_mima"
         android:background="#fff"
         android:layout_below="@id/denglu_zhanghao"/>
-
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
-        android:layout_centerVertical="true"
+        android:id="@+id/denglu_anniu"
+        android:layout_below="@+id/denglu_mima"
+        android:layout_marginTop="50dp"
         android:background="@drawable/denglubtn"
         android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/denglu_anniu"
+        android:text="新用户"
+        android:id="@+id/denglu_zhuce"
+        android:textColor="#478ADA"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/denglu_zhuce"
+        android:textColor="#478ADA"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="忘记密码"/>
+
 </RelativeLayout>
