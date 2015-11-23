@@ -1,24 +1,18 @@
 package com.best.demo.yijianzhi;
 
-<<<<<<< HEAD
 import android.app.Activity;
-=======
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
->>>>>>> develop
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 
-<<<<<<< HEAD
-public class MainActivity extends Activity {
-=======
 import com.best.fragment.FirstFragment;
 import com.best.fragment.MyFragment;
 import com.best.fragment.QiuZhiFragment;
 import com.best.fragment.ZhaoPinFragment;
->>>>>>> develop
+
 
 /**
  * MainActivity   主框架
