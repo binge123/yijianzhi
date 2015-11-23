@@ -24,7 +24,6 @@ public class User extends BmobObject{
                 String user_address, String user_credit,
                 String renzheng, String registtime,
                 String last_login_time, String phone_number) {
-        super(tableName);
         this.username = username;
         this.password = password;
         this.nick = nick;
