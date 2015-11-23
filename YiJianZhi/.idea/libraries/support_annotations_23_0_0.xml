@@ -7,6 +7,7 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://D:/Users/Administrator.WIN-OU8RQGJIKK8/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0-sources.jar!/" />
+<<<<<<< HEAD
       <root url="jar://G:/Users/dell2/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0-sources.jar!/" />
 =======
       <root url="jar://D:/Users/TaoHongTu/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar!/" />
@@ -15,6 +16,8 @@
     <SOURCES>
       <root url="jar://D:/Users/TaoHongTu/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0-sources.jar!/" />
 >>>>>>> b49a1da1fa0e9b2c4ef023307449aa0e54dbba87
+=======
+>>>>>>> binge_repositories
     </SOURCES>
   </library>
 </component>

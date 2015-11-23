@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="blue1">#5CABE3</color>
-    <color name="blue2">#000</color>
+    <color name="blue2">#5CABE3</color>
     <color name="green">#FD87A9</color>
     <!-- 注册页面 -->
     <color name="hint_username">#C9C3C3</color>
