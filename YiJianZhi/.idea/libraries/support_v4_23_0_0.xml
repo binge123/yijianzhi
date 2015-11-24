@@ -18,8 +18,12 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+<<<<<<< HEAD
       <root url="jar://D:/Users/Administrator.WIN-OU8RQGJIKK8/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.0.0/support-v4-23.0.0-sources.jar!/" />
 >>>>>>> binge_repositories
+=======
+      <root url="jar://D:/Users/TaoHongTu/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.0.0/support-v4-23.0.0-sources.jar!/" />
+>>>>>>> 3a7d56f9ecb43233e5365954181583a087f5c405
     </SOURCES>
   </library>
 </component>

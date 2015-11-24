@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="first_banner">100dp</dimen>
+    <dimen name="first_gridview_text1">20sp</dimen>
+    <dimen name="first_gridview_text2">10sp</dimen>
+</resources>
