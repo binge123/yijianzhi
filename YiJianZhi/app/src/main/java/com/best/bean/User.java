@@ -3,8 +3,10 @@ package com.best.bean;
 import cn.bmob.v3.BmobObject;
 
 /**
- * Created by Administrator on 2015/11/23.
+ * Created by dell2 on 2015/11/23.
  */
+
+
 public class User extends BmobObject{
     private String username;
     private String password;
@@ -35,6 +37,11 @@ public class User extends BmobObject{
         this.registtime = registtime;
         this.last_login_time = last_login_time;
         this.phone_number = phone_number;
+    }
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
 
     public String getUsername() {

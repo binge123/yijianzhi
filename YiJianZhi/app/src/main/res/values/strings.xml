@@ -12,8 +12,17 @@
     <string name="send_verification_code">发送验证码</string>
     <string name="consent_clause">同意条款</string>
     <string name="input_verification_code">请输入验证码</string>
+<<<<<<< HEAD
     <string name="title_activity_splashscreen">Splashscreen</string>
     <string name="title_activity_guidepage">Guidepage</string>
     <string name="my_zhuangtai">登录/注册</string>
+=======
+
+    <string name="title_activity_splashscreen">Splashscreen</string>
+    <string name="title_activity_guidepage">Guidepage</string>
+
+    <string name="my_zhuangtai">登录/注册</string>
+
+>>>>>>> 8d2af4e647210deddeb29ff9eff44813844b8a7a
 
 </resources>
