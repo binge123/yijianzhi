@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.best.demo.yijianzhi" >
-
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,15 +11,16 @@
             android:name="com.best.demo.yijianzhi.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/MyActionBar" >
+
+        </activity>
+        <activity
+            android:name=".ZhuCeActivity"
+            android:label="@string/title_activity_zhu_ce" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".ZhuCeActivity"
-            android:label="@string/title_activity_zhu_ce" >
         </activity>
         <activity
             android:name=".RecruitActivity"
@@ -30,6 +31,9 @@
             android:label="@string/title_activity_shanping" >
         </activity>
 <<<<<<< HEAD
+=======
+
+>>>>>>> 8d2af4e647210deddeb29ff9eff44813844b8a7a
         <activity
             android:name=".Splashscreen"
             android:label="@string/title_activity_splashscreen" >
@@ -38,7 +42,10 @@
             android:name=".Guidepage"
             android:label="@string/title_activity_guidepage" >
         </activity>
+<<<<<<< HEAD
 =======
+
+>>>>>>> 8d2af4e647210deddeb29ff9eff44813844b8a7a
         <activity android:name=".LoginActivity"
             android:label="LoginActivity">
 
@@ -46,9 +53,6 @@
         <activity android:name=".ShouCangActivity"
             android:label="ShouCangActivity">
 
-<<<<<<< HEAD
->>>>>>> 2a2a7fefd8932a22b6aa17a7a8edeed34dafe47f
-=======
         </activity>
         <activity android:name=".MyFaBuActivity"
             android:label="MyFaBuActivity">
@@ -62,7 +66,6 @@
             android:label="ZiLiaoActivity">
 
         </activity>
->>>>>>> binge_repositories
     </application>
 
 </manifest>

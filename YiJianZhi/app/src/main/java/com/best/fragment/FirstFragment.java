@@ -12,12 +12,15 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 import android.widget.ListView;
 import android.widget.ScrollView;
 
 import com.best.adapter.FirstListViewAdapter;
+=======
+import android.widget.GridView;
+>>>>>>> 8320a366cf48d22fb605320eaffb0589aaed14ee
 import com.best.demo.yijianzhi.R;
-
 import java.util.ArrayList;
 import java.util.List;
 

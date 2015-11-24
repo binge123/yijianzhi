@@ -16,8 +16,14 @@
 <<<<<<< HEAD
     <string name="title_activity_splashscreen">Splashscreen</string>
     <string name="title_activity_guidepage">Guidepage</string>
-=======
     <string name="my_zhuangtai">登录/注册</string>
+=======
+
+    <string name="title_activity_splashscreen">Splashscreen</string>
+    <string name="title_activity_guidepage">Guidepage</string>
+
+    <string name="my_zhuangtai">登录/注册</string>
+<<<<<<< HEAD
 >>>>>>> 2a2a7fefd8932a22b6aa17a7a8edeed34dafe47f
 =======
     <string name="first_remen">热门招聘</string>
@@ -31,5 +37,9 @@
     <string name="first_tuijian">推荐招聘</string>
 
 >>>>>>> 3a7d56f9ecb43233e5365954181583a087f5c405
+=======
+
+>>>>>>> 8d2af4e647210deddeb29ff9eff44813844b8a7a
+>>>>>>> 8320a366cf48d22fb605320eaffb0589aaed14ee
 
 </resources>
