@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\dell2\.gradle\caches\modules-2\files-2.1\cn.bmob.android\bmob-sms\1.0.1\df9db564e2842696a68deca39b0186aebf3dc07c\bmob-sms-1.0.1.jar"
+        jar="C:\Users\dell2\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.4.0\40340c0748190fe897baf7bffbc1b282734294e5\okhttp-2.4.0.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="df9db564e2842696a68deca39b0186aebf3dc07c">
-        <dex dex="G:\gittest\YiJianZhi\app\build\intermediates\pre-dexed\debug\bmob-sms-1.0.1-e811089ee1cdc14e5524538e3323d41820bc5104.jar" />
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="G:\gittest\YiJianZhi\app\build\intermediates\pre-dexed\debug\okhttp-2.4.0-3a1662d918b7365bb18f5d13dd57bc35fd16ae49.jar" />
     </item>
     <item
-        jar="C:\Users\dell2\.gradle\caches\modules-2\files-2.1\cn.bmob.android\bmob-sdk\3.4.5\44e559d18fd5a4826b0a4c0354308213e4f658a2\bmob-sdk-3.4.5.jar"
+        jar="C:\Users\dell2\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.4.0\5b72bf48563ea8410e650de14aa33ff69a3e8c35\okio-1.4.0.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="44e559d18fd5a4826b0a4c0354308213e4f658a2">
-        <dex dex="G:\gittest\YiJianZhi\app\build\intermediates\pre-dexed\debug\bmob-sdk-3.4.5-0cc8a10c6232f400a49fc33c57f1ff043f7491bc.jar" />
+        sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
+        <dex dex="G:\gittest\YiJianZhi\app\build\intermediates\pre-dexed\debug\okio-1.4.0-6a627fb9895abe53614234bedf90c85ea07fcddd.jar" />
     </item>
 
 </items>

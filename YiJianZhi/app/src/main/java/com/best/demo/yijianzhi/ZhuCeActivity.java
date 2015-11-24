@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.best.bean.User;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -17,10 +19,12 @@ import cn.bmob.sms.BmobSMS;
 import cn.bmob.sms.exception.BmobException;
 import cn.bmob.sms.listener.RequestSMSCodeListener;
 import cn.bmob.sms.listener.VerifySMSCodeListener;
+import cn.bmob.v3.listener.SaveListener;
 
 public class ZhuCeActivity extends AppCompatActivity {
     EditText et,et1,et2;
     String number = null;
+    String password = null;
     String code = null;
     ImageButton imagebtn;
     @Override
@@ -38,6 +42,7 @@ public class ZhuCeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 number = et.getText().toString();
+                password = et2.getText().toString();
                 code = et1.getText().toString();
                 //通过verifySmsCode方式可验证该短信验证码
                 BmobSMS.verifySmsCode(ZhuCeActivity.this, number, code, new VerifySMSCodeListener() {
@@ -46,9 +51,23 @@ public class ZhuCeActivity extends AppCompatActivity {
                     public void done(BmobException ex) {
                         // TODO Auto-generated method stub
                         if (ex == null) {//短信验证码已验证成功
-                            Toast.makeText(ZhuCeActivity.this,"注册成功", Toast.LENGTH_SHORT).show();
+                            if(password == null){
+                                Toast.makeText(ZhuCeActivity.this,"请输入密码", Toast.LENGTH_SHORT).show();
+                            }else {
+                                User user = new User(number,password);
+                                user.save(ZhuCeActivity.this, new SaveListener() {
+                                    @Override
+                                    public void onSuccess() {
+                                        Toast.makeText(ZhuCeActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
+                                        ZhuCeActivity.this.finish();
+                                    }
 
-                            ZhuCeActivity.this.finish();
+                                    @Override
+                                    public void onFailure(int i, String s) {
+
+                                    }
+                                });
+                            }
                         } else {
                             Log.i("smile", "验证失败：code =" + ex.getErrorCode() + ",msg = " + ex.getLocalizedMessage());
                         }
