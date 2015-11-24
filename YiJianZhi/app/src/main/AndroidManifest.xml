@@ -30,10 +30,6 @@
             android:name=".ShanpingActivity"
             android:label="@string/title_activity_shanping" >
         </activity>
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d2af4e647210deddeb29ff9eff44813844b8a7a
         <activity
             android:name=".Splashscreen"
             android:label="@string/title_activity_splashscreen" >
@@ -42,10 +38,6 @@
             android:name=".Guidepage"
             android:label="@string/title_activity_guidepage" >
         </activity>
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d2af4e647210deddeb29ff9eff44813844b8a7a
         <activity android:name=".LoginActivity"
             android:label="LoginActivity">
 
