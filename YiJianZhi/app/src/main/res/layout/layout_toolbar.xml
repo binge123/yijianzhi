@@ -7,7 +7,6 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-<<<<<<< HEAD
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,8 +28,5 @@
                 android:textSize="16sp"/>
 
         </LinearLayout>
-=======
-
->>>>>>> 8320a366cf48d22fb605320eaffb0589aaed14ee
-    </RelativeLayout>
+</RelativeLayout>
 </android.support.v7.widget.Toolbar>
