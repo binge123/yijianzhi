@@ -2,11 +2,25 @@
 <items version="2" >
 
     <item
+        jar="D:\Users\TaoHongTu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="F:\Android\YiJianZhi\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-b8ee9238dc1694d6280e372c0cfe81a87e6722d4.jar" />
+    </item>
+    <item
         jar="F:\Android\YiJianZhi\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
         <dex dex="F:\Android\YiJianZhi\app\build\intermediates\pre-dexed\debug\classes-a82f83155ce1eb92079f4456048afcdcc3005eee.jar" />
+    </item>
+    <item
+        jar="F:\Android\YiJianZhi\app\build\intermediates\exploded-aar\in.srain.cube\ultra-ptr\1.0.10\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="f7aa9a64408679b54260b859ae8eb723b69ecd30">
+        <dex dex="F:\Android\YiJianZhi\app\build\intermediates\pre-dexed\debug\classes-8216ab6ad61f0efb1d7fe4bc68caa9ff6ee9459a.jar" />
     </item>
     <item
         jar="F:\Android\YiJianZhi\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
@@ -21,13 +35,6 @@
         revision="23.0.0"
         sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
         <dex dex="F:\Android\YiJianZhi\app\build\intermediates\pre-dexed\debug\classes-64fa60a25960b88dcb2c8f13419d62cfd3bd6392.jar" />
-    </item>
-    <item
-        jar="D:\Users\TaoHongTu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="F:\Android\YiJianZhi\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-b8ee9238dc1694d6280e372c0cfe81a87e6722d4.jar" />
     </item>
 
 </items>
