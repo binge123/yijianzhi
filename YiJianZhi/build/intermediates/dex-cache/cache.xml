@@ -2,7 +2,19 @@
 <items version="2" >
 
     <item
+<<<<<<< HEAD
+<<<<<<< HEAD
+        jar="C:\Users\Administrator.WIN-OU8RQGJIKK8\.gradle\caches\modules-2\files-2.1\cn.bmob.android\bmob-sdk\3.4.5\44e559d18fd5a4826b0a4c0354308213e4f658a2\bmob-sdk-3.4.5.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="44e559d18fd5a4826b0a4c0354308213e4f658a2">
+        <dex dex="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\pre-dexed\debug\bmob-sdk-3.4.5-875d76c3d842f7cf443e18c6b5df2b9195bcbf3f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator.WIN-OU8RQGJIKK8\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.4.0\40340c0748190fe897baf7bffbc1b282734294e5\okhttp-2.4.0.jar"
+=======
         jar="C:\Users\dell2\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.4.0\40340c0748190fe897baf7bffbc1b282734294e5\okhttp-2.4.0.jar"
+>>>>>>> 8320a366cf48d22fb605320eaffb0589aaed14ee
         jumboMode="false"
         revision="23.0.0"
         sha1="40340c0748190fe897baf7bffbc1b282734294e5">
@@ -13,7 +25,46 @@
         jumboMode="false"
         revision="23.0.0"
         sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
+<<<<<<< HEAD
+        <dex dex="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\pre-dexed\debug\okio-1.4.0-2026352ec23b6a4f92a0b96f146be66bc8a08ef3.jar" />
+=======
+        jar="D:\Users\TaoHongTu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="F:\Android\YiJianZhi\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-b8ee9238dc1694d6280e372c0cfe81a87e6722d4.jar" />
+    </item>
+    <item
+        jar="F:\Android\YiJianZhi\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="F:\Android\YiJianZhi\app\build\intermediates\pre-dexed\debug\classes-a82f83155ce1eb92079f4456048afcdcc3005eee.jar" />
+    </item>
+    <item
+        jar="F:\Android\YiJianZhi\app\build\intermediates\exploded-aar\in.srain.cube\ultra-ptr\1.0.10\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="f7aa9a64408679b54260b859ae8eb723b69ecd30">
+        <dex dex="F:\Android\YiJianZhi\app\build\intermediates\pre-dexed\debug\classes-8216ab6ad61f0efb1d7fe4bc68caa9ff6ee9459a.jar" />
+    </item>
+    <item
+        jar="F:\Android\YiJianZhi\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="F:\Android\YiJianZhi\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-6f10118d08a5e782c99252986a94cd2645cba9dd.jar" />
+    </item>
+    <item
+        jar="F:\Android\YiJianZhi\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="F:\Android\YiJianZhi\app\build\intermediates\pre-dexed\debug\classes-64fa60a25960b88dcb2c8f13419d62cfd3bd6392.jar" />
+>>>>>>> 3a7d56f9ecb43233e5365954181583a087f5c405
+=======
         <dex dex="G:\gittest\YiJianZhi\app\build\intermediates\pre-dexed\debug\okio-1.4.0-6a627fb9895abe53614234bedf90c85ea07fcddd.jar" />
+>>>>>>> 8320a366cf48d22fb605320eaffb0589aaed14ee
     </item>
 
 </items>
