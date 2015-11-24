@@ -29,7 +29,6 @@
             android:name=".ShanpingActivity"
             android:label="@string/title_activity_shanping" >
         </activity>
-<<<<<<< HEAD
         <activity
             android:name=".Splashscreen"
             android:label="@string/title_activity_splashscreen" >
@@ -38,7 +37,6 @@
             android:name=".Guidepage"
             android:label="@string/title_activity_guidepage" >
         </activity>
-=======
         <activity android:name=".LoginActivity"
             android:label="LoginActivity">
 
@@ -46,9 +44,6 @@
         <activity android:name=".ShouCangActivity"
             android:label="ShouCangActivity">
 
-<<<<<<< HEAD
->>>>>>> 2a2a7fefd8932a22b6aa17a7a8edeed34dafe47f
-=======
         </activity>
         <activity android:name=".MyFaBuActivity"
             android:label="MyFaBuActivity">
@@ -62,7 +57,6 @@
             android:label="ZiLiaoActivity">
 
         </activity>
->>>>>>> binge_repositories
     </application>
 
 </manifest>

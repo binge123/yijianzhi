@@ -6,9 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import com.best.demo.yijianzhi.R;
-
 import java.util.List;
+
+import com.best.demo.yijianzhi.R;
 
 /**
  * Created by Administrator on 2015/11/20.
