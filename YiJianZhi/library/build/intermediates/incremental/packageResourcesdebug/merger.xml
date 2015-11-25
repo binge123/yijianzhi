@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="G:\gittest\YiJianZhi\library\src\main\res"><file path="G:\gittest\YiJianZhi\library\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">MyLibrary</string></file></source><source path="G:\gittest\YiJianZhi\library\build\generated\res\rs\debug"/><source path="G:\gittest\YiJianZhi\library\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug"><source path="G:\gittest\YiJianZhi\library\src\debug\res"/></dataSet><mergedItems/></merger>

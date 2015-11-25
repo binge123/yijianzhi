@@ -13,6 +13,11 @@
     <string name="consent_clause">同意条款</string>
     <string name="input_verification_code">请输入验证码</string>
 <<<<<<< HEAD
+    <string name="title_activity_splashscreen">Splashscreen</string>
+    <string name="title_activity_guidepage">Guidepage</string>
+    <string name="my_zhuangtai">登录/注册</string>
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
     <string name="title_activity_splashscreen">Splashscreen</string>
     <string name="title_activity_guidepage">Guidepage</string>
@@ -41,5 +46,6 @@
 
 >>>>>>> 8d2af4e647210deddeb29ff9eff44813844b8a7a
 >>>>>>> 8320a366cf48d22fb605320eaffb0589aaed14ee
+>>>>>>> f07a34e2164fc5c52eef47ed6fd2896edaaff7cc
 
 </resources>
