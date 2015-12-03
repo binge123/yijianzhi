@@ -10,7 +10,7 @@
         android:layout_marginBottom="10dp"
         android:textSize="25sp"
         android:textColor="#fff"
-        android:background="#94918A"
+        android:background="@null"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

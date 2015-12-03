@@ -3,6 +3,10 @@ package com.best.demo.yijianzhi;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.baidu.android.pushservice.PushConstants;
+import com.baidu.android.pushservice.PushManager;
+
 public class Splashscreen extends Activity {
     public static long currentTime;
     @Override
@@ -31,7 +35,8 @@ public class Splashscreen extends Activity {
 
             }
         }).start();
-
+        //启动云推送
+        PushManager.startWork(getApplicationContext(), PushConstants.LOGIN_TYPE_API_KEY, "e8WobuHCGgTjWGq8VEVHAHzg");
     }
 
 

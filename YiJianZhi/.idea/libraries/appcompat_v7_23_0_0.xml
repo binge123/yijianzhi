@@ -10,26 +10,6 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://D:/Users/Administrator.WIN-OU8RQGJIKK8/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.0.0/appcompat-v7-23.0.0-sources.jar!/" />
-<<<<<<< HEAD
-=======
-=======
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <root url="jar://D:/Users/Administrator.WIN-OU8RQGJIKK8/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.0.0/appcompat-v7-23.0.0-sources.jar!/" />
->>>>>>> binge_repositories
-=======
-      <root url="jar://D:/Users/TaoHongTu/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.0.0/appcompat-v7-23.0.0-sources.jar!/" />
->>>>>>> 3a7d56f9ecb43233e5365954181583a087f5c405
-=======
-      <root url="jar://G:/Users/dell2/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.0.0/appcompat-v7-23.0.0-sources.jar!/" />
->>>>>>> 8d2af4e647210deddeb29ff9eff44813844b8a7a
->>>>>>> 8320a366cf48d22fb605320eaffb0589aaed14ee
->>>>>>> f07a34e2164fc5c52eef47ed6fd2896edaaff7cc
     </SOURCES>
   </library>
 </component>

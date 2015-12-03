@@ -4,33 +4,43 @@
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:background="#3191E8">
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-<<<<<<< HEAD
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
         <ImageView
-            android:layout_width="wrap_content"
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/my_touxiang"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/t_sousuo"
+            android:layout_weight="1"
+            android:background="@drawable/search"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/fanhui"/>
+            android:layout_gravity="center_vertical"/>
         <LinearLayout
+            android:id="@+id/line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_gravity="center">
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/first_pressed"/>
             <TextView
+                android:id="@+id/t_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="临沂市"
+                android:text="临沂"
                 android:textSize="16sp"/>
 
         </LinearLayout>
-=======
-
->>>>>>> 8320a366cf48d22fb605320eaffb0589aaed14ee
-    </RelativeLayout>
+    </LinearLayout>
 </android.support.v7.widget.Toolbar>

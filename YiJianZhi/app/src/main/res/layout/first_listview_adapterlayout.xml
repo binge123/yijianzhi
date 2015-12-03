@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:background="@color/first_gridview_adapter">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/first_grvimageView" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:background="@drawable/ji"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/first_grvimageView" />
         <TextView
-            android:layout_weight="1"
+            android:text="sdaddad"
+            android:layout_alignTop="@id/first_grvimageView"
+            android:layout_toRightOf="@id/first_grvimageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:id="@+id/first_gridview_text1"
             android:textSize="@dimen/first_gridview_text1"/>
         <TextView
-            android:layout_weight="1"
+            android:text="dsadsdsa"
+            android:layout_alignBottom="@id/first_grvimageView"
+            android:layout_toRightOf="@id/first_grvimageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="sssss"
+            android:layout_alignLeft="@id/first_gridview_text1"
             android:id="@+id/first_gridview_text2"
             android:textSize="@dimen/first_gridview_text2"
             android:textColor="@color/first_gridview_xiaozi"
             />
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

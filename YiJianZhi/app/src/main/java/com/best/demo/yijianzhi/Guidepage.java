@@ -31,7 +31,7 @@ public class Guidepage extends Activity {
         v1 = LayoutInflater.from(this).inflate(R.layout.viewpagelayout1,null);
         v2 = LayoutInflater.from(this).inflate(R.layout.viewpagelayout2,null);
         v3 = LayoutInflater.from(this).inflate(R.layout.viewpagelayout3,null);
-        ((Button)v3.findViewById(R.id.next)).setOnClickListener(new View.OnClickListener() {
+        ((Button)v3.findViewById(R.id.filletButton)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Guidepage.this,MainActivity.class);

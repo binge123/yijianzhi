@@ -20,6 +20,8 @@ public class ZhaoPinFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //创建视图v，找到招聘的布局文件
         View v = inflater.inflate(R.layout.fragment_zhaopin,container,false);
+
+
         return v;
     }
 }

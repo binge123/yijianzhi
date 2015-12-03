@@ -9,22 +9,8 @@
     <color name="send_verification_code">#FFFFFF</color>
     <color name="consent_clause">#94918A</color>
     <color name="input_verification_code">#C9C3C3</color>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <color name="huise">#ccc</color>
-=======
->>>>>>> 8320a366cf48d22fb605320eaffb0589aaed14ee
-=======
->>>>>>> f07a34e2164fc5c52eef47ed6fd2896edaaff7cc
-
     <color name="huise">#ccc</color>
     <color name="my_touxiang">#3090E7</color>
-<<<<<<< HEAD
->>>>>>> 2a2a7fefd8932a22b6aa17a7a8edeed34dafe47f
-=======
     <color name="first_gridview_remen">#EC655F</color>
     <color name="first_gridview_fujin">#EFEBE2</color>
     <color name="first_gridview_xianshi">#36D7B6</color>
@@ -33,8 +19,4 @@
     <color name="first_gridview_back">#94918A</color>
     <color name="first_gridview_adapter">#fff</color>
 
-
->>>>>>> 3a7d56f9ecb43233e5365954181583a087f5c405
-=======
->>>>>>> 8320a366cf48d22fb605320eaffb0589aaed14ee
 </resources>

@@ -1,8 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.best.demo.yijianzhi.RecruitActivity">
+    android:background="#fff">
     <RelativeLayout
         android:id="@+id/Rly1"
         android:layout_width="match_parent"
@@ -11,8 +11,9 @@
         android:paddingBottom="8dp"
         android:background="#3191E8">
         <ImageView
-            android:id="@+id/Iv1"
+            android:id="@+id/z_fanhui"
             android:layout_width="40dp"
+            android:onClick="zFanHui"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:background="@drawable/fanhui"/>
@@ -25,226 +26,326 @@
             android:textSize="20sp"
             android:textColor="#fff"/>
     </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/Rly1"
-        android:paddingLeft="40dp"
-        android:paddingRight="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/Rly2">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_below="@id/Rly1"
+        android:layout_height="wrap_content">
         <RelativeLayout
-            android:id="@+id/Lly1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
+            android:id="@+id/Rly2"
+            android:layout_marginTop="20dp">
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="薪资："
-                android:textColor="#8F8D8E"
-                android:textSize="18sp"
-                android:id="@+id/Tv2" />
-
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="标题 :"
+                android:id="@+id/re_title"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp" />
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginLeft="35dp"
-                android:layout_alignBottom="@+id/Tv2"
-                android:layout_toRightOf="@+id/Tv2"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/Lly2"
-            android:layout_below="@+id/Lly1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
+                android:layout_toRightOf="@id/re_title"
+                android:layout_alignTop="@id/re_title"
+                android:layout_alignBottom="@id/re_title"
+                android:textColor="#000"
+                android:hint="请输入标题"
+                android:background="#fff"
+                android:id="@+id/re_title1"
+                android:gravity="bottom"
+                android:textSize="15sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#F3F3F2"
+                android:layout_below="@id/re_title"></View>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="地址："
-                android:textColor="#8F8D8E"
-                android:textSize="18sp"
-                android:id="@+id/Tv3" />
-
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="地址 :"
+                android:id="@+id/re_address"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/re_title"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp" />
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginLeft="35dp"
-                android:layout_alignBottom="@+id/Tv3"
-                android:layout_toRightOf="@+id/Tv3"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/Lly3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/Lly2"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="职位："
-            android:textColor="#8F8D8E"
-            android:textSize="18sp"
-            android:id="@+id/Tv4"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginLeft="35dp"
-            android:layout_alignBottom="@+id/Tv4"
-            android:layout_toRightOf="@+id/Tv4"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/Lly4"
-            android:layout_below="@+id/Lly3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="联系人："
-            android:textColor="#8F8D8E"
-            android:textSize="18sp"
-            android:id="@+id/Tv5" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginLeft="17dp"
-            android:layout_alignBottom="@+id/Tv5"
-            android:layout_toRightOf="@+id/Tv5"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/Lly5"
-            android:layout_below="@+id/Lly4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="公司名："
-            android:textColor="#8F8D8E"
-            android:textSize="18sp"
-            android:id="@+id/Tv6" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginLeft="17dp"
-            android:layout_alignBottom="@+id/Tv6"
-            android:layout_toRightOf="@+id/Tv6"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/Lly6"
-            android:layout_below="@+id/Lly5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
+                android:layout_toRightOf="@id/re_address"
+                android:layout_alignTop="@id/re_address"
+                android:textColor="#000"
+                android:layout_alignBottom="@id/re_address"
+                android:hint="请输入地址"
+                android:background="#fff"
+                android:id="@+id/re_address1"
+                android:gravity="bottom"
+                android:textSize="15sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#F3F3F2"
+                android:layout_below="@id/re_address"></View>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="联系方式："
-                android:textColor="#8F8D8E"
-                android:textSize="18sp"
-                android:id="@+id/Tv7" />
-
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="职位 :"
+                android:id="@+id/re_position"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/re_address"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp" />
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_alignBottom="@+id/Tv7"
-                android:layout_toRightOf="@+id/Tv7"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/Lly7"
-            android:layout_below="@+id/Lly6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
+                android:layout_toRightOf="@id/re_position"
+                android:layout_alignTop="@id/re_position"
+                android:id="@+id/re_position1"
+                android:layout_alignBottom="@id/re_position"
+                android:hint="请输入职位"
+                android:background="#fff"
+                android:textColor="#000"
+                android:gravity="bottom"
+                android:textSize="15sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#F3F3F2"
+                android:layout_below="@id/re_position"></View>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="职位介绍："
-                android:textColor="#8F8D8E"
-                android:textSize="18sp"
-                android:id="@+id/Tv8" />
-
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="薪资 :"
+                android:id="@+id/re_money"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/re_position"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp" />
             <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/re_money"
+                android:layout_alignTop="@id/re_money"
+                android:id="@+id/re_money1"
+                android:layout_alignBottom="@id/re_money"
+                android:hint="请输入薪资"
+                android:background="#fff"
+                android:textColor="#000"
+                android:gravity="bottom"
+                android:textSize="15sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#F3F3F2"
+                android:layout_below="@id/re_money"></View>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="联系人 :"
+                android:id="@+id/re_contacts"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/re_money"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/re_contacts"
+                android:layout_alignTop="@id/re_contacts"
+                android:id="@+id/re_contacts1"
+                android:layout_alignBottom="@id/re_contacts"
+                android:textColor="#000"
+                android:hint="请输入联系人"
+                android:background="#fff"
+                android:gravity="bottom"
+                android:textSize="15sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#F3F3F2"
+                android:layout_below="@id/re_contacts"></View>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="公司名 :"
+                android:id="@+id/re_name"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/re_contacts"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/re_name"
+                android:layout_alignTop="@id/re_name"
+                android:id="@+id/re_name1"
+                android:hint="请输入公司名"
+                android:layout_alignBottom="@id/re_name"
+                android:background="#fff"
+                android:textColor="#000"
+                android:gravity="bottom"
+                android:textSize="15sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#F3F3F2"
+                android:layout_below="@id/re_name"></View>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="职位描述 :"
+                android:id="@+id/re_pdesc"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/re_name"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/re_pdesc"
+                android:layout_alignTop="@id/re_pdesc"
+                android:id="@+id/re_pdesc1"
+                android:layout_alignBottom="@id/re_pdesc"
+                android:textColor="#000"
+                android:hint="请输入职位描述"
+                android:background="#fff"
+                android:gravity="bottom"
+                android:textSize="15sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#F3F3F2"
+                android:layout_below="@id/re_pdesc"></View>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="需求人数 :"
+                android:id="@+id/re_pnum"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/re_pdesc"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/re_pnum"
+                android:layout_alignTop="@id/re_pnum"
+                android:id="@+id/re_pnum1"
+                android:layout_alignBottom="@id/re_pnum"
+                android:hint="请输入人数"
+                android:background="#fff"
+                android:textColor="#000"
+                android:gravity="bottom"
+                android:textSize="15sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#F3F3F2"
+                android:layout_below="@id/re_pnum"></View>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="电话号码:"
+                android:id="@+id/re_recruitid"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/re_pnum"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/re_recruitid"
+                android:layout_alignTop="@id/re_recruitid"
+                android:id="@+id/re_recruitid1"
+                android:layout_alignBottom="@id/re_recruitid"
+                android:hint="请输入电话号码"
+                android:background="#fff"
+                android:textColor="#000"
+                android:gravity="bottom"
+                android:textSize="15sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#F3F3F2"
+                android:layout_below="@id/re_recruitid"></View>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="结束时间 :"
+                android:id="@+id/re_time"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/re_recruitid"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/re_time"
+                android:layout_alignTop="@id/re_time"
+                android:id="@+id/re_time1"
+                android:layout_alignBottom="@id/re_time"
+                android:hint="请输入结束时间"
+                android:background="#fff"
+                android:textColor="#000"
+                android:gravity="bottom"
+                android:textSize="15sp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#F3F3F2"
+                android:layout_below="@id/re_time"></View>
+            <Button
+                android:id="@+id/re_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_alignBottom="@+id/Tv8"
-                android:layout_toRightOf="@+id/Tv8"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                android:layout_below="@id/re_time"
+                android:layout_marginTop="40dp"
+                android:padding="10dp"
+                android:text="发布"
+                android:textColor="#fff"
+                android:background="#3191E8"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
         </RelativeLayout>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="发布"
-            android:textColor="#fff"
-            android:background="@drawable/background"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="47dp" />
-    </RelativeLayout>
+    </ScrollView>
+
 </RelativeLayout>
