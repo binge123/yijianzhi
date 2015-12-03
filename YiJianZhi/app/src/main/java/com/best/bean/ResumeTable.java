@@ -1,12 +1,17 @@
 package com.best.bean;
 
+import java.security.PrivateKey;
+
 import cn.bmob.v3.BmobObject;
 
 /**
  * Created by Administrator on 2015/11/25.
  */
 public class ResumeTable extends BmobObject {
-    String name,work_exp,work_time,expect_money,age,sex,zhiwei,address,remark;
+    private String name,work_exp,work_time,expect_money,age,sex,zhiwei,address,remark;
+
+    public ResumeTable() {
+    }
 
     public ResumeTable(String tableName, String name, String work_exp, String work_time, String expect_money, String age, String sex, String zhiwei, String address, String remark) {
         super(tableName);

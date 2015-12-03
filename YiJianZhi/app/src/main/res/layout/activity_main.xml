@@ -2,8 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context=".MainActivity">
 
-    <include android:id="@+id/toolbar"
-    layout="@layout/layout_toolbar"/>
+
+
 
     <RadioGroup
         android:id="@+id/rg"
@@ -47,7 +47,7 @@
     </RadioGroup>
     <FrameLayout
         android:id="@+id/fragment_parent"
-        android:layout_below="@id/toolbar"
+        android:layout_alignParentTop="true"
         android:layout_above="@id/rg"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

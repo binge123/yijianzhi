@@ -1,26 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.best.demo.yijianzhi" >
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.best.demo.yijianzhi.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/MyActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ZhuCeActivity"
             android:label="@string/title_activity_zhu_ce" >
-
         </activity>
         <activity
             android:name=".RecruitActivity"
@@ -31,34 +45,99 @@
             android:label="@string/title_activity_shanping" >
         </activity>
         <activity
+            android:name=".MoreActivity"
+            android:label="MoreActivity" >
+        </activity>
+        <activity
             android:name=".Splashscreen"
             android:label="@string/title_activity_splashscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Guidepage"
             android:label="@string/title_activity_guidepage" >
         </activity>
-        <activity android:name=".LoginActivity"
-            android:label="LoginActivity">
-
+        <activity
+            android:name=".LoginActivity"
+            android:label="LoginActivity" >
         </activity>
-        <activity android:name=".ShouCangActivity"
-            android:label="ShouCangActivity">
-
+        <activity
+            android:name=".ShouCangActivity"
+            android:label="ShouCangActivity" >
         </activity>
-        <activity android:name=".MyFaBuActivity"
-            android:label="MyFaBuActivity">
-
+        <activity
+            android:name=".MyFaBuActivity"
+            android:label="MyFaBuActivity" >
         </activity>
-        <activity android:name=".QiuZhiActivity"
-            android:label="QiuZhiActivity">
-
+        <activity
+            android:name=".QiuZhiActivity"
+            android:label="QiuZhiActivity" >
         </activity>
-        <activity android:name=".ZiLiaoActivity"
-            android:label="ZiLiaoActivity">
-
+        <activity
+            android:name=".ZiLiaoActivity"
+            android:label="ZiLiaoActivity" >
         </activity>
+        <activity
+            android:name=".CityActivity"
+            android:label="CityActivity" >
+        </activity>
+        <activity
+            android:name=".FirstXuanXiangActivity"
+            android:label="@string/title_activity_first_xuan_xiang" >
+        </activity>
+        <activity android:name=".ZhaoPinXiangQingActivity" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity android:name=".JianLiXiangQingActivity"></activity>
+
+
+
+        <!-- 用于接收系统消息以保证PushService正常运行 -->
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+                <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <!-- Push服务接收客户端发送的各种请求-->
+        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.baidu.android.pushservice.PushService" android:exported="true"
+            android:process=":bdservice_v1" >
+            <intent-filter >
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- 4.4版本新增的CommandService声明，提升小米和魅族手机上的实际推送到达率 -->
+        <service android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" />
+        <!-- push结束 -->
+
+
     </application>
 
 </manifest>

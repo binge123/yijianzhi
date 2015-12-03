@@ -41,7 +41,7 @@
     <Button
         android:layout_width="70dp"
         android:layout_height="40dp"
-        android:text="跳过"
+        android:text="跳过>>"
         android:id="@+id/next"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -49,6 +49,6 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:paddingRight="5dp"
-        android:background="@drawable/psds31396_03"
+        android:background="@null"
         android:onClick="tNext"/>
 </RelativeLayout>

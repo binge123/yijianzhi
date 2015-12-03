@@ -19,13 +19,18 @@ public class User extends BmobObject{
     private String registtime;
     private String last_login_time;
     private String phone_number;
+    private String channelId;
+
+    public User() {
+    }
 
     public User(String tableName, String username,
                 String password, String nick,
                 String user_sex, String user_age,
                 String user_address, String user_credit,
                 String renzheng, String registtime,
-                String last_login_time, String phone_number) {
+                String last_login_time, String phone_number,
+                String channelId) {
         this.username = username;
         this.password = password;
         this.nick = nick;
@@ -37,11 +42,16 @@ public class User extends BmobObject{
         this.registtime = registtime;
         this.last_login_time = last_login_time;
         this.phone_number = phone_number;
+        this.channelId = channelId;
     }
 
     public User(String username, String password) {
         this.username = username;
         this.password = password;
+    }
+
+    public User(String channelId) {
+        this.channelId = channelId;
     }
 
     public String getUsername() {
@@ -130,5 +140,13 @@ public class User extends BmobObject{
 
     public void setPhone_number(String phone_number) {
         this.phone_number = phone_number;
+    }
+
+    public String getChannelId() {
+        return channelId;
+    }
+
+    public void setChannelId(String channelId) {
+        this.channelId = channelId;
     }
 }

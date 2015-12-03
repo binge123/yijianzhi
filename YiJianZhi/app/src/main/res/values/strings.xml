@@ -24,5 +24,7 @@
     <string name="first_gengduo">更多</string>
     <string name="first_gengduo1">更多功能</string>
     <string name="first_tuijian">推荐招聘</string>
+    <string name="title_activity_first_xuan_xiang">FirstXuanXiangActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
 
 </resources>

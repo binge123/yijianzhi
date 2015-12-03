@@ -1,17 +1,31 @@
 package com.best.demo.yijianzhi;
 
-import android.app.Activity;
+
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
+import com.amap.api.location.AMapLocation;
+import com.amap.api.location.AMapLocationClient;
+import com.amap.api.location.AMapLocationClientOption;
+import com.amap.api.location.AMapLocationListener;
+import com.baidu.android.pushservice.PushConstants;
+import com.baidu.android.pushservice.PushManager;
 import com.best.fragment.FirstFragment;
 import com.best.fragment.MyFragment;
 import com.best.fragment.QiuZhiFragment;
 import com.best.fragment.ZhaoPinFragment;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 
 /**
@@ -23,12 +37,27 @@ import com.best.fragment.ZhaoPinFragment;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     FragmentManager fm;
     FragmentTransaction ftt;
+    //最下方的4个radioButton
     RadioButton rbtn,rbtn1,rbtn2,rbtn3;
+    TextView textView;
+    //声明AMapLocationClient类对象
+    AMapLocationClient mLocationClient = null;
+    //声明mLocationOption对象
+    AMapLocationClientOption mLocationOption = null;
+    //声明定位回调监听
+    AMapLocationListener mLocationListener = null;
+    LinearLayout line;
+
+    //定义一个标识
+    int i = 0;
+    //用来检验用户是否已登录
+    public String username = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        username = getIntent().getStringExtra("id");
         //找到4个radioButon
         rbtn = (RadioButton) findViewById(R.id.radioButton1);
         rbtn1 = (RadioButton) findViewById(R.id.radioButton2);
@@ -49,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ftt.add(R.id.fragment_parent,ff,"radioButton1");
             ftt.commit();
         }
+
     }
 
     @Override

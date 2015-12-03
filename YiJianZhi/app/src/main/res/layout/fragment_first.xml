@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="fill_parent">
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/first_fragment">
     <!--
     <in.srain.cube.views.ptr.PtrClassicFrameLayout
         android:id="@+id/rotate_header_list_view_frame"
@@ -13,10 +15,17 @@
         cube_ptr:ptr_pull_to_fresh="false"
         cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
         cube_ptr:ptr_resistance="1.7">-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#F2F2F2">
+    <include android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"/>
     <in.srain.cube.views.ptr.PtrClassicFrameLayout
         xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
         android:id="@+id/rotate_header_list_view_frame"
         android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
         android:layout_height="match_parent"
         cube_ptr:ptr_duration_to_close="200"
         cube_ptr:ptr_duration_to_close_header="1000"
@@ -32,7 +41,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_gravity="center_horizontal|top">
-
                 <android.support.v4.view.ViewPager
                     android:layout_width="fill_parent"
                     android:layout_height="@dimen/first_banner"
@@ -44,6 +52,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/first_banner"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
                     android:id="@+id/linearlayout"
                     android:padding="5dp"
                     android:background="#fff">
@@ -63,9 +72,11 @@
                                 android:layout_weight="1"
                                 android:orientation="horizontal"
                                 android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="80dp"
                                 android:padding="5dp"
-                                android:background="#fff">
+                                android:gravity="center"
+                                android:background="#fff"
+                                android:id="@+id/first_remen">
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -73,28 +84,33 @@
                                 <LinearLayout
                                     android:orientation="vertical"
                                     android:layout_weight="1"
+                                    android:layout_marginLeft="10dp"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="fill_parent">
+                                    android:layout_height="wrap_content">
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/first_remen"
+                                        android:layout_marginTop="-5dp"
                                         android:textColor="@color/first_gridview_remen"
                                         android:textSize="@dimen/first_gridview_text1"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/first_remen1"
+                                        android:layout_marginTop="5dp"
                                         android:textColor="@color/first_gridview_xiaozi"
                                         android:textSize="@dimen/first_gridview_text2"/>
                                 </LinearLayout>
                             </LinearLayout>
                             <LinearLayout
+                                android:id="@+id/first_xianshi"
                                 android:layout_weight="1"
                                 android:orientation="horizontal"
                                 android:layout_width="fill_parent"
                                 android:layout_marginTop="1dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="80dp"
+                                android:gravity="center"
                                 android:padding="5dp"
                                 android:background="#fff">
                                 <ImageView
@@ -104,18 +120,21 @@
                                 <LinearLayout
                                     android:orientation="vertical"
                                     android:layout_weight="1"
+                                    android:layout_marginLeft="10dp"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="fill_parent">
+                                    android:layout_height="wrap_content">
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/first_xianshi"
+                                        android:layout_marginTop="-5dp"
                                         android:textColor="@color/first_gridview_xianshi"
                                         android:textSize="@dimen/first_gridview_text1"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/first_xianshi1"
+                                        android:layout_marginTop="5dp"
                                         android:textColor="@color/first_gridview_xiaozi"
                                         android:textSize="@dimen/first_gridview_text2"/>
                                 </LinearLayout>
@@ -128,64 +147,75 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent">
                             <LinearLayout
+                                android:id="@+id/first_fujin"
                                 android:layout_weight="1"
                                 android:orientation="horizontal"
+                                android:gravity="center"
                                 android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="80dp"
                                 android:padding="5dp"
                                 android:background="#fff">
                                 <ImageView
+                                    android:layout_marginLeft="10dp"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:background="@drawable/zhuye_fujin"/>
                                 <LinearLayout
                                     android:layout_marginTop="2dp"
-                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginLeft="10dp"
                                     android:orientation="vertical"
                                     android:layout_weight="1"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="fill_parent">
+                                    android:layout_height="wrap_content">
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/first_fujin"
+                                        android:layout_marginTop="-5dp"
                                         android:textColor="@color/first_gridview_fujin"
                                         android:textSize="@dimen/first_gridview_text1"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/first_fujin1"
+                                        android:layout_marginTop="5dp"
                                         android:textColor="@color/first_gridview_xiaozi"
                                         android:textSize="@dimen/first_gridview_text2"/>
                                 </LinearLayout>
                             </LinearLayout>
                             <LinearLayout
+                                android:id="@+id/first_gengduo"
                                 android:layout_weight="1"
                                 android:orientation="horizontal"
                                 android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="80dp"
+                                android:gravity="center"
                                 android:layout_marginTop="1dp"
                                 android:padding="5dp"
                                 android:background="#fff">
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
                                     android:background="@drawable/zhuye_gengduo"/>
                                 <LinearLayout
                                     android:orientation="vertical"
                                     android:layout_weight="1"
+                                    android:layout_marginLeft="10dp"
                                     android:layout_width="wrap_content"
-                                    android:layout_height="fill_parent">
+                                    android:layout_height="wrap_content">
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/first_gengduo"
+                                        android:layout_marginTop="-5dp"
                                         android:textColor="@color/first_gridview_gengduo"
                                         android:textSize="@dimen/first_gridview_text1"/>
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/first_gengduo1"
+                                        android:layout_marginTop="5dp"
                                         android:textColor="@color/first_gridview_xiaozi"
                                         android:textSize="@dimen/first_gridview_text2"/>
                                 </LinearLayout>
@@ -204,29 +234,37 @@
                     <!--android:background="@color/first_gridview_back"/>-->
                 </LinearLayout>
                 <TextView
-                    android:id="@+id/tuijian"
+                    android:id="@+id/f_tuijian"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/first_tuijian"
                     android:layout_below="@+id/linearlayout"
                     android:layout_centerHorizontal="true"
                     android:paddingLeft="10dp"
-                    android:layout_marginTop="5dp"
+                    android:background="#fff"
+                    android:layout_marginTop="7dp"
                     android:textSize="@dimen/first_gridview_text1"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/f_tuijian"
+                    android:background="#D8D8D8">
+
+                </View>
                 <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/tuijian"
+                    android:layout_below="@+id/f_tuijian"
                     android:layout_centerHorizontal="true"
-                    android:paddingLeft="12dp"
-                    android:paddingRight="12dp">
+                    android:layout_marginTop="1dp">
 
-                    <com.best.bean.MyListViewForScollProbiem
+                    <com.best.bean.MyListViewForScollProblem
                         android:id="@+id/first_listview"
                         android:layout_width="fill_parent"
+                        android:dividerHeight="1dp"
                         android:layout_height="wrap_content">
 
-                    </com.best.bean.MyListViewForScollProbiem>
+                    </com.best.bean.MyListViewForScollProblem>
 
                 </RelativeLayout>
 
@@ -234,6 +272,7 @@
             </RelativeLayout>
         </ScrollView>
     </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+    </RelativeLayout>
 
 
 </FrameLayout>
