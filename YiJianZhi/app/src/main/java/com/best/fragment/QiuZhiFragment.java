@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.best.adapter.FirstListViewAdapter;
 import com.best.adapter.QiuZuiAdapter;
 import com.best.bean.RecruitTable;
 import com.best.demo.yijianzhi.JianLiXiangQingActivity;
@@ -173,7 +174,7 @@ public class QiuZhiFragment extends Fragment{
         bq.findObjects(getActivity(), new FindListener<RecruitTable>() {
             @Override
             public void onSuccess(List<RecruitTable> list) {
-                listView.setAdapter(new QiuZuiAdapter(getActivity(),list));
+                listView.setAdapter(new FirstListViewAdapter(getActivity(),list));
                 Log.i("aaa",list.get(0).getTitle());
             }
             @Override

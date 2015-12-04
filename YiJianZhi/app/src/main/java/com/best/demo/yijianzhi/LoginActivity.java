@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.baidu.android.pushservice.PushConstants;
+import com.baidu.android.pushservice.PushManager;
 import com.best.bean.User;
 
 import java.util.List;
@@ -56,6 +58,8 @@ public class LoginActivity extends Activity {
                 public void onSuccess(List<User> object) {
                     String mima1 = object.get(0).getPassword();
                     if(mima.getText().toString().equals(mima1)) {
+                        //启动云推送
+                        PushManager.startWork(getApplicationContext(), PushConstants.LOGIN_TYPE_API_KEY, "e8WobuHCGgTjWGq8VEVHAHzg");
                         Intent i = new Intent(LoginActivity.this,MainActivity.class);
                         SharedPreferences sp = getSharedPreferences("username", Context.MODE_PRIVATE);
                         SharedPreferences.Editor ueditor = sp.edit();

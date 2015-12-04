@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class SearchActivity extends AppCompatActivity {
+public class SearchActivity extends Activity {
 
     private GridView gv,gv2;
     private ImageView img;

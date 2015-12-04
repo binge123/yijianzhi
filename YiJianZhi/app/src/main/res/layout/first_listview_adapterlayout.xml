@@ -17,26 +17,64 @@
             android:background="@drawable/ji"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:id="@+id/first_grvimageView" />
+            android:id="@+id/first_listview_tubiao" />
+        <!--<com.best.demo.yijianzhi.TypeView-->
+            <!--xmlns:app="http://schemas.android.com/apk/res/com.best.demo.yijianzhi"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:id="@+id/typev"-->
+            <!--app:typeText="传单"-->
+            <!--app:typeColor="#0F0F0F"-->
+            <!--app:typeTextSize="16sp"-->
+            <!--/>-->
         <TextView
             android:text="sdaddad"
-            android:layout_alignTop="@id/first_grvimageView"
-            android:layout_toRightOf="@id/first_grvimageView"
+            android:layout_alignTop="@id/first_listview_tubiao"
+            android:layout_toRightOf="@id/first_listview_tubiao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:id="@+id/first_gridview_text1"
+            android:id="@+id/first_listview_text1"
             android:textSize="@dimen/first_gridview_text1"/>
-        <TextView
-            android:text="dsadsdsa"
-            android:layout_alignBottom="@id/first_grvimageView"
-            android:layout_toRightOf="@id/first_grvimageView"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/first_gridview_text1"
-            android:id="@+id/first_gridview_text2"
-            android:textSize="@dimen/first_gridview_text2"
-            android:textColor="@color/first_gridview_xiaozi"
-            />
+            android:layout_alignLeft="@+id/first_listview_text1"
+            android:layout_alignStart="@+id/first_listview_text1"
+            android:layout_alignBottom="@+id/first_listview_tubiao"
+            android:layout_below="@+id/first_listview_text1"
+            android:gravity="center|left">
+            <TextView
+                android:layout_weight="1"
+                android:text="dsadsdsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/first_listview_xinzi"
+                android:textSize="@dimen/first_gridview_text2"
+                android:textColor="@color/first_gridview_xiaozi"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="@dimen/first_gridview_text2"
+                android:id="@+id/first_listview_time"
+                android:textColor="@color/first_gridview_xiaozi"
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="@dimen/first_gridview_text2"
+                android:id="@+id/first_listview_didian"
+                android:textColor="@color/first_gridview_xiaozi"
+                />
+        </LinearLayout>
+
     </RelativeLayout>
 </LinearLayout>

@@ -8,6 +8,15 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical">
+        <TextView
+            android:text="wewew"
+            android:textSize="30sp"
+            android:id="@+id/xuanxiangtoolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#3191E8"
+            android:textColor="#fff"/>
         <LinearLayout
             android:layout_width="fill_parent"
             android:orientation="horizontal"
@@ -76,10 +85,16 @@
 
             </LinearLayout>
         </LinearLayout>
-        <ListView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/firstxuanxiang_list" />
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res/com.best.demo.yijianzhi"
+            android:id="@+id/firstxuanxiang_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:smoothScrollbar="true"
+            ptr:ptrMode="both"/>
+
     </LinearLayout>
 
 </RelativeLayout>

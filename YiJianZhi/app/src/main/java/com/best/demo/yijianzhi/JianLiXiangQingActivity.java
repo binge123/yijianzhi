@@ -1,5 +1,7 @@
 package com.best.demo.yijianzhi;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -35,19 +37,14 @@ import cn.bmob.v3.listener.FindListener;
 import cn.bmob.v3.listener.GetListener;
 import cn.bmob.v3.listener.SaveListener;
 
-public class JianLiXiangQingActivity extends AppCompatActivity {
+public class JianLiXiangQingActivity extends Activity {
 
 
     List<RecruitTable> lists = new ArrayList<>();
     TextView T1,T2,T3,T4,T5,T6,T7,T8,T9,T10;
 //    String name,work_exp,work_time,expect_money,resumeid,age,sex,position,address,remark;
-
-
-
     String channelid = null;
     public static String baseurl = "https://api.tuisong.baidu.com/rest/3.0/";
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,21 +59,30 @@ public class JianLiXiangQingActivity extends AppCompatActivity {
         T7 = (TextView) findViewById(R.id.x_money1);
         T8 = (TextView) findViewById(R.id.x_time1);
 //        T9 = (TextView) findViewById(R.id.x_bei1);
+        Intent intent = getIntent();
+        String title = intent.getStringExtra("title");
+        String didian = intent.getStringExtra("didian");
+
         Bmob.initialize(this,"18b52c81a4fcfaf1f5cf2418f4ac9bc5");
         BmobQuery<RecruitTable> bmob1 = new BmobQuery<>();
 //        bmob1.addWhereEqualTo("username",new LoginActivity().username);
-        bmob1 = bmob1.addWhereEqualTo("recruitid",getIntent().getStringExtra("id"));
+        bmob1.addWhereEqualTo("title", title);
+        bmob1.addWhereEqualTo("work_address",didian);
+        bmob1.setLimit(10);
         bmob1.findObjects(this, new FindListener<RecruitTable>() {
             @Override
             public void onSuccess(List<RecruitTable> list) {
-                T1.setText(list.get(0).getTitle());//标题
-                T2.setText(list.get(0).getPosition());//职位
-                T3.setText(list.get(0).getWork_address());//工作地址
-                T4.setText(list.get(0).getWork_money());//工资
-                T5.setText(list.get(0).getJiesuan());//结算方式
-                T6.setText(list.get(0).getContacts());//联系人
-                T7.setText(list.get(0).getOver_time());//结束时间
-                T8.setText(list.get(0).getPosition_desc());//工作描述
+                for (RecruitTable i:list){
+                    T1.setText(i.getTitle());//标题
+                    T2.setText(i.getPosition());//职位
+                    T3.setText(i.getWork_address());//工作地址
+                    T4.setText(i.getWork_money());//工资
+                    T5.setText(i.getJiesuan());//结算方式
+                    T6.setText(i.getContacts());//联系人
+                    T7.setText(i.getOver_time());//结束时间
+                    T8.setText(i.getPosition_desc());//工作描述
+                }
+
             }
 
             @Override
@@ -84,12 +90,11 @@ public class JianLiXiangQingActivity extends AppCompatActivity {
 
             }
         });
-
         //消息推送，接收channelid
         channelid = getIntent().getStringExtra("chanelid");
 
-
     }
+
     public void tellButton(View v){
         //把channelid保存到数据库
         User user = new User(channelid);

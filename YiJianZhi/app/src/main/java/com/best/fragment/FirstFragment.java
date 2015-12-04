@@ -19,26 +19,24 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.ScrollView;
+
 
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.best.adapter.FirstListViewAdapter;
-import android.widget.GridView;
+
 import android.widget.TextView;
 
 import com.best.bean.CompanyPublish;
+
 import com.best.bean.RecruitTable;
 import com.best.demo.yijianzhi.CityActivity;
 import com.best.demo.yijianzhi.FirstXuanXiangActivity;
 import com.best.demo.yijianzhi.JianLiXiangQingActivity;
-import com.best.demo.yijianzhi.MainActivity;
 import com.best.demo.yijianzhi.R;
 import com.best.demo.yijianzhi.SearchActivity;
 
@@ -73,11 +71,11 @@ public class FirstFragment extends Fragment implements View.OnClickListener{
     ListView lv;
     PtrClassicFrameLayout ptr;
     LinearLayout remen,fujin,xianshi,gengduo;
-    ImageView  imageView;
+    TextView  imageView;
     private FragmentManager manager;
     private FragmentTransaction ft;
     private ImageHandler handler = new ImageHandler(new WeakReference<FirstFragment>(this));
-
+    List<RecruitTable> listviews = new ArrayList<RecruitTable>();
     TextView textView;
     //声明AMapLocationClient类对象
     AMapLocationClient mLocationClient = null;
@@ -123,13 +121,24 @@ public class FirstFragment extends Fragment implements View.OnClickListener{
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                RecruitTable companyPublish = listviews.get(position);
+
+                String title =companyPublish.getTitle();
+                String didian =companyPublish.getWork_address();
                 Intent i = new Intent(getActivity(), JianLiXiangQingActivity.class);
-                i.putExtra("id", "001");
+                i.putExtra("title", title);
+                i.putExtra("didian",didian);
                 startActivity(i);
             }
         });
+
+
+
+
+
         Bmob.initialize(getActivity(), "18b52c81a4fcfaf1f5cf2418f4ac9bc5");
-        final BmobQuery<CompanyPublish> bq= new BmobQuery<>();
+        final BmobQuery<RecruitTable> bq= new BmobQuery<>();
         ptr = (PtrClassicFrameLayout) v.findViewById(R.id.rotate_header_list_view_frame);
         ptr.setLastUpdateTimeRelateObject(this);
 
@@ -139,11 +148,12 @@ public class FirstFragment extends Fragment implements View.OnClickListener{
                 frame.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        bq.findObjects(getContext(), new FindListener<CompanyPublish>() {
+                        bq.findObjects(getContext(), new FindListener<RecruitTable>() {
                             @Override
-                            public void onSuccess(List<CompanyPublish> lists) {
+                            public void onSuccess(List<RecruitTable> lists) {
                                 Log.i("test", "成功");
                                 lv.setAdapter(new FirstListViewAdapter( getContext(),lists));
+                                listviews=lists;
                             }
 
                             @Override
@@ -178,7 +188,7 @@ public class FirstFragment extends Fragment implements View.OnClickListener{
         }, 100);
 
 
-        imageView = (ImageView)v.findViewById(R.id.t_sousuo);
+        imageView = (TextView)v.findViewById(R.id.t_sousuo);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -274,18 +284,25 @@ public class FirstFragment extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         int i =v.getId();
         Intent intent = new Intent(getActivity(), FirstXuanXiangActivity.class);
+        TextView textView ;
         if(i==R.id.first_remen){
-
+            textView = (TextView) v.findViewById(R.id.remenzhaopin);
+            intent.putExtra("toolbar", textView.getText());
         }else if(i==R.id.first_fujin){
-
+            textView = (TextView) v.findViewById(R.id.fujinzhaopin);
+            intent.putExtra("toolbar", textView.getText());
         }else if(i==R.id.first_xianshi){
-
+            textView = (TextView) v.findViewById(R.id.xianshizhaopin);
+            intent.putExtra("toolbar", textView.getText());
         }else if(i==R.id.first_gengduo){
-
+            textView = (TextView) v.findViewById(R.id.genduozhaopin);
+            intent.putExtra("toolbar", textView.getText());
         }
         startActivity(intent);
 
     }
+
+
 
     class MyViewPager extends PagerAdapter {
 
