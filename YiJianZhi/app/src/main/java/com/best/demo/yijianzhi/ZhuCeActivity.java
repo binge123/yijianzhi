@@ -14,11 +14,14 @@ import com.best.bean.User;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import cn.bmob.sms.BmobSMS;
 import cn.bmob.sms.exception.BmobException;
 import cn.bmob.sms.listener.RequestSMSCodeListener;
 import cn.bmob.sms.listener.VerifySMSCodeListener;
+import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.listener.FindListener;
 import cn.bmob.v3.listener.SaveListener;
 
 public class ZhuCeActivity extends AppCompatActivity {
@@ -27,6 +30,9 @@ public class ZhuCeActivity extends AppCompatActivity {
     String password = null;
     String code = null;
     ImageButton imagebtn;
+
+
+    int biao = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,38 +47,61 @@ public class ZhuCeActivity extends AppCompatActivity {
         imagebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                biao = 0;
                 number = et.getText().toString();
                 password = et2.getText().toString();
                 code = et1.getText().toString();
-                //通过verifySmsCode方式可验证该短信验证码
-                BmobSMS.verifySmsCode(ZhuCeActivity.this, number, code, new VerifySMSCodeListener() {
-
+                //判断账号是否注册过
+                BmobQuery<User> bmobs = new BmobQuery<>();
+                bmobs.findObjects(ZhuCeActivity.this, new FindListener<User>() {
                     @Override
-                    public void done(BmobException ex) {
-                        // TODO Auto-generated method stub
-                        if (ex == null) {//短信验证码已验证成功
-                            if(password == null){
-                                Toast.makeText(ZhuCeActivity.this,"请输入密码", Toast.LENGTH_SHORT).show();
-                            }else {
-                                User user = new User(number,password);
-                                user.save(ZhuCeActivity.this, new SaveListener() {
-                                    @Override
-                                    public void onSuccess() {
-                                        Toast.makeText(ZhuCeActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
-                                        ZhuCeActivity.this.finish();
-                                    }
-
-                                    @Override
-                                    public void onFailure(int i, String s) {
-
-                                    }
-                                });
+                    public void onSuccess(List<User> list) {
+                        for (User u : list) {
+                            if (number.equals(u.getUsername())) {
+                                biao = 1;
+                                Toast.makeText(ZhuCeActivity.this, "账号已被注册", Toast.LENGTH_SHORT).show();
+                                break;
                             }
-                        } else {
-                            Log.i("smile", "验证失败：code =" + ex.getErrorCode() + ",msg = " + ex.getLocalizedMessage());
                         }
                     }
+
+                    @Override
+                    public void onError(int i, String s) {
+
+                    }
                 });
+                if(biao == 0){
+                    //通过verifySmsCode方式可验证该短信验证码
+                    BmobSMS.verifySmsCode(ZhuCeActivity.this, number, code, new VerifySMSCodeListener() {
+
+                        @Override
+                        public void done(BmobException ex) {
+                            // TODO Auto-generated method stub
+                            if (ex == null) {//短信验证码已验证成功
+                                if(password == null){
+                                    Toast.makeText(ZhuCeActivity.this,"请输入密码", Toast.LENGTH_SHORT).show();
+                                }else {
+                                    User user = new User(number,password);
+                                    user.save(ZhuCeActivity.this, new SaveListener() {
+                                        @Override
+                                        public void onSuccess() {
+                                            Toast.makeText(ZhuCeActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
+                                            ZhuCeActivity.this.finish();
+                                        }
+
+                                        @Override
+                                        public void onFailure(int i, String s) {
+
+                                        }
+                                    });
+                                }
+                            } else {
+                                Log.i("smile", "验证失败：code =" + ex.getErrorCode() + ",msg = " + ex.getLocalizedMessage());
+                            }
+                        }
+                    });
+                }
+
             }
         });
     }

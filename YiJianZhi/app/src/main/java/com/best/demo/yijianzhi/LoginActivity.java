@@ -1,7 +1,9 @@
 package com.best.demo.yijianzhi;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -55,7 +57,11 @@ public class LoginActivity extends Activity {
                     String mima1 = object.get(0).getPassword();
                     if(mima.getText().toString().equals(mima1)) {
                         Intent i = new Intent(LoginActivity.this,MainActivity.class);
-                        i.putExtra("id",zhanghao.getText().toString());
+                        SharedPreferences sp = getSharedPreferences("username", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor ueditor = sp.edit();
+                        ueditor.putString("username", zhanghao.getText().toString());
+                        ueditor.putString("zhuang","yi");
+                        ueditor.commit();
                         startActivity(i);
                     }else {
                         jg.setText("账号或密码不正确");

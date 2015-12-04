@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context="com.best.demo.yijianzhi.MyData">
     <RelativeLayout
         android:id="@+id/Rly1"
@@ -34,16 +35,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Rly2"
+
             android:layout_marginTop="10dp">
-            <ImageView
+            <ImageButton
                 android:id="@+id/x_tu"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/my_touxiang"/>
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="30dp"
-                android:text="昵称 :"
+                android:text="姓名 :"
                 android:id="@+id/md_nick"
                 android:gravity="bottom"
                 android:layout_marginTop="10dp"
@@ -57,7 +60,7 @@
                 android:layout_alignBottom="@id/md_nick"
                 android:layout_alignTop="@id/md_nick"
                 android:textColor="#000"
-                android:hint="请输入昵称"
+                android:hint="请输入姓名"
                 android:background="#fff"
                 android:id="@+id/md_nick1"
                 android:gravity="bottom"
@@ -255,7 +258,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/md_money1"
                 android:text="保存"
+                android:textSize="14sp"
+                android:textColor="#fff"
                 android:layout_marginTop="50dp"
+                android:background="#3191E8"
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentBottom="true"/>
         </RelativeLayout>

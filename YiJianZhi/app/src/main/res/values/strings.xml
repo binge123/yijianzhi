@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">YiJianZhi</string>
+    <string name="app_name">易兼职</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
@@ -12,7 +12,7 @@
     <string name="send_verification_code">发送验证码</string>
     <string name="consent_clause">同意条款</string>
     <string name="input_verification_code">请输入验证码</string>
-    <string name="title_activity_splashscreen">Splashscreen</string>
+    <string name="title_activity_splashscreen">易兼职</string>
     <string name="title_activity_guidepage">Guidepage</string>
     <string name="my_zhuangtai">登录/注册</string>
     <string name="first_remen">热门招聘</string>

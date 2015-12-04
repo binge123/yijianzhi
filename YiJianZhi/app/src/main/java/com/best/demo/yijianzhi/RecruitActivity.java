@@ -54,7 +54,7 @@ public class RecruitActivity extends Activity {
                 position_desc = Et7.getText().toString();//职位描述
 //                phone_number = Et8.getText().toString();//电话号码
                 person_number = Et8.getText().toString();//需求人数
-                recruitid = Et9.getText().toString();//联系方式
+                recruitid = ((int)Math.random()*10000)+"";
                 over_time = Et10.getText().toString();//结束时间
                 RecruitTable ra = new RecruitTable();
                 ra.setWork_money(work_money);
