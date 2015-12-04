@@ -24,21 +24,22 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:orientation="horizontal"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/z_didian">
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:background="#fff"
                 android:layout_height="50dp"
-                android:gravity="center">
+                android:gravity="center"
+                android:background="#fff">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="地点"
+                    android:text="兰山区"
                     android:textColor="#3191E8"
                     android:textSize="18sp"
-                    android:id="@+id/textView9" />
+                    android:id="@+id/z_didian1" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -50,16 +51,17 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="50dp"
                 android:background="#fff"
-                android:gravity="center">
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/z_feilei">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="分类"
-                    android:textColor="#3191E8"
+                    android:text="服务员"
                     android:textSize="18sp"
-                    android:id="@+id/textView10" />
+                    android:textColor="#3191E8"
+                    android:id="@+id/z_feilei1" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -71,14 +73,15 @@
                 android:layout_weight="1"
                 android:layout_height="50dp"
                 android:background="#fff"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/z_shi">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="时段"
+                    android:text="日结"
                     android:textSize="18sp"
                     android:textColor="#3191E8"
-                    android:id="@+id/textView11" />
+                    android:id="@+id/z_shi1" />
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -86,11 +89,17 @@
 
             </LinearLayout>
         </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#ECECEC">
+
+        </View>
         <ListView
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="465dp"
-            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/z_list"
+            android:background="#ECECEC"
             android:layout_gravity="center_horizontal|bottom" />
     </LinearLayout>
 

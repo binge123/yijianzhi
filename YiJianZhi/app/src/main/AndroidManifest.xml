@@ -18,12 +18,17 @@
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+
 
 
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -59,7 +64,8 @@
         </activity>
         <activity
             android:name=".Guidepage"
-            android:label="@string/title_activity_guidepage" >
+            android:label="@string/title_activity_guidepage"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         </activity>
         <activity
             android:name=".LoginActivity"
@@ -137,7 +143,22 @@
             android:exported="true" />
         <!-- push结束 -->
 
-
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="2c7f6b808b3c4496561173ac9b75f37a">    
+                         
+        </meta-data>
+        <service android:name="com.amap.api.location.APSService"/>
+        <!-- meta-data需要写在application中 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        <intent-filter>
+            <action android:name="com.baidu.location.service_v2.2" />
+        </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="vc8gixf5F6k7789nX9nscmiG" />
     </application>
 
 </manifest>

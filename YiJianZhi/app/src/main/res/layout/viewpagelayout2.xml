@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/yin2"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-  >
+    android:background="@drawable/yindaoye3"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
 
 
     <TextView
@@ -10,11 +10,15 @@
         android:layout_height="wrap_content"
         android:text="工作来敲门"
         android:textColor="#ffff00"
+
+        android:textStyle="bold"
         android:textSize="30sp"
-        android:id="@+id/textView7"
-        android:layout_marginBottom="150dp"
+        android:id="@+id/textView5"
+        android:layout_marginBottom="182dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true">
+    </TextView>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,9 +26,9 @@
         android:text="即时消息提醒，好工作当仁不让"
         android:textColor="#fff"
         android:textSize="20sp"
-        android:id="@+id/textView8"
-        android:layout_alignTop="@+id/textView7"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp" />
 
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp" />
 </RelativeLayout>

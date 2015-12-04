@@ -63,6 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="点击登录"
+                    android:id="@+id/my_dian"
                     android:textColor="#fff"
                     android:layout_alignLeft="@id/my_zhuangtai"
                     android:layout_marginBottom="15dp"
@@ -191,7 +192,7 @@
                         android:text="发布简历"
                         android:textColor="#E9CD68"
                         android:textSize="16sp"
-                        android:id="@+id/textView6" />
+                        android:id="@+id/my_fabuz" />
                 </LinearLayout>
             </LinearLayout>
             <View
@@ -228,7 +229,7 @@
                         android:text="我要登录"
                         android:textColor="#DCA5E6"
                         android:textSize="16sp"
-                        android:id="@+id/textView9" />
+                        android:id="@+id/my_deng" />
                 </LinearLayout>
                 <View
                     android:background="#44000000"

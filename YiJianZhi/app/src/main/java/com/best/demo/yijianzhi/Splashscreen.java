@@ -27,6 +27,7 @@ public class Splashscreen extends Activity {
                     //跳转到MusicListActivity
                     Intent intent = new Intent(Splashscreen.this, Guidepage.class);
                     Splashscreen.this.startActivity(intent);
+                    Splashscreen.this.finish();
                     // finish();
                     break;
 

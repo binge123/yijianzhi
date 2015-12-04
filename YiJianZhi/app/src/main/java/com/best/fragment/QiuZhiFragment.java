@@ -176,7 +176,6 @@ public class QiuZhiFragment extends Fragment{
                 listView.setAdapter(new QiuZuiAdapter(getActivity(),list));
                 Log.i("aaa",list.get(0).getTitle());
             }
-
             @Override
             public void onError(int i, String s) {
                 Log.i("aaa",i+""+s);

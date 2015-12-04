@@ -70,8 +70,6 @@ public class ZiLiaoActivity extends Activity {
             @Override
             public void onError(int code, String msg) {
                 // TODO Auto-generated method stub
-                Toast.makeText(ZiLiaoActivity.this, "查询失败", Toast.LENGTH_SHORT).show();
-                Toast.makeText(ZiLiaoActivity.this, "id就是"+objectid+"id就是", Toast.LENGTH_SHORT).show();
             }
         });
 
