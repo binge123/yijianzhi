@@ -87,7 +87,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -97,8 +96,8 @@
     <orderEntry type="library" exported="" name="okhttp-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="pushservice-4.5.6.88" level="project" />
     <orderEntry type="library" exported="" name="ultra-ptr-1.0.10" level="project" />
-    <orderEntry type="library" exported="" name="pinyin4android1.0" level="project" />
     <orderEntry type="library" exported="" name="AMap_Location_v2.0.0_20151117" level="project" />
+    <orderEntry type="library" exported="" name="pinyin4android1.0" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-23.0.0" level="project" />
     <orderEntry type="library" exported="" name="bmob-sdk-3.4.5" level="project" />
     <orderEntry type="library" exported="" name="bmob-sms-1.0.1" level="project" />
