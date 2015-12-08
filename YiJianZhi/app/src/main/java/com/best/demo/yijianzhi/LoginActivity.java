@@ -26,7 +26,7 @@ import cn.bmob.v3.listener.FindListener;
 public class LoginActivity extends Activity {
 
     EditText zhanghao,mima;
-    TextView jg;
+    TextView jg,newuser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,11 +34,14 @@ public class LoginActivity extends Activity {
         zhanghao = (EditText) findViewById(R.id.denglu_zhanghao);
         mima = (EditText) findViewById( R.id.denglu_mima);
         jg = (TextView) findViewById(R.id.jinggao);
-    }
-    public void zhuCe(View v)
-    {
-        Intent i = new Intent(this,ZhuCeActivity.class);
-        startActivity(i);
+        newuser = (TextView) findViewById(R.id.denglu_zhuce);
+        newuser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LoginActivity.this,ZhuCeActivity.class);
+                startActivity(i);
+            }
+        });
     }
     public void login(View v)
     {
@@ -67,6 +70,7 @@ public class LoginActivity extends Activity {
                         ueditor.putString("zhuang","yi");
                         ueditor.commit();
                         startActivity(i);
+                        LoginActivity.this.finish();
                     }else {
                         jg.setText("账号或密码不正确");
                     }

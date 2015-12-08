@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/editText"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="#ECECEC"
+        android:layout_width="250dp"
+        android:hint="请输入公司名称"
+        android:paddingLeft="10dp"
+        android:layout_height="45dp" />
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:background="#ECECEC"
+        android:layout_width="250dp"
+        android:hint="请输入公司注册手机号码"
+        android:paddingLeft="10dp"
+        android:layout_height="45dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn"
+        android:background="#3191E8"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="从相册中选择图片"
+        android:textColor="#FFF"
+        android:layout_width="250dp"
+        android:layout_height="45dp" />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*上传营业执照和法人身份证"
+        android:textSize="16sp"
+        android:textColor="#FF0000"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="changeButton"
+            android:layout_alignParentLeft="true"
+            android:background="#3191E1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消选择"/>
+        <Button
+            android:onClick="saveButton"
+            android:layout_alignParentRight="true"
+            android:background="#3191E1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

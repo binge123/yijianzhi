@@ -1,1 +1,1 @@
-include ':app', ':wchat_pulltorefresh'
+include ':app', ':wchat_pulltorefresh', ':multi-image-selector'

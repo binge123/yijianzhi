@@ -58,7 +58,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/denglu_anniu"
         android:text="新用户"
-        android:onClick="zhuCe"
         android:id="@+id/denglu_zhuce"
         android:textColor="#478ADA"
         android:layout_alignParentLeft="true"

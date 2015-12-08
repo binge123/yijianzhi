@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/app/src/main/assets" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/best/bean/City.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/best/demo/yijianzhi/CityActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/best/sqlite" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/best/utils" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/best/utils/CreateMD.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/best/utils/PushTestReceiver.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cityhot_edittext_bg.9.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/wb_btn_off_normal.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/wb_city_search_bg.9.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/wb_search_icon.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/item_selector.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/text_selector.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_city.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/frist_list_item.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/item_city.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/overlay.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/recent_city.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/total_item.xml" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

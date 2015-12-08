@@ -58,6 +58,7 @@ public class FirstXuanXiangActivity extends AppCompatActivity {
         t2 = (TextView)findViewById(R.id.firstxuanxiang_feilei1);
         t3 = (TextView) findViewById(R.id.firstxuanxiang_shi1);
         toolbar = (TextView) findViewById(R.id.xuanxiangtoolbar);
+
         Intent intent = getIntent();
         String s = intent.getStringExtra("toolbar");
         toolbar.setText(s);

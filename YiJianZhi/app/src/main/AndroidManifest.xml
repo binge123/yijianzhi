@@ -30,7 +30,7 @@
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -70,7 +70,7 @@
         <activity
             android:name=".Guidepage"
             android:label="@string/title_activity_guidepage"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            android:theme="@style/MyActionBar">
         </activity>
         <activity
             android:name=".LoginActivity"
@@ -107,7 +107,8 @@
             android:label="@string/title_activity_first_xuan_xiang"
             android:theme="@style/MyActionBar">
         </activity>
-        <activity android:name=".ZhaoPinXiangQingActivity" >
+        <activity android:name=".ZhaoPinXiangQingActivity"
+            android:theme="@style/MyActionBar">
         </activity>
         <activity
             android:name=".SearchActivity"
@@ -118,7 +119,12 @@
             android:theme="@style/MyActionBar"></activity>
         <activity android:name=".PeopleDataActivity"
             android:theme="@style/MyActionBar"></activity>
-
+        <activity android:name=".RenZhengActivity"
+            android:theme="@style/MyActionBar"></activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="me.nereo.imagechoose.MultiImageSelectorActivity" />
+        <activity android:name="me.nereo.imagechoose.ShowActivity"></activity>
 
         <!-- 用于接收系统消息以保证PushService正常运行 -->
         <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver"

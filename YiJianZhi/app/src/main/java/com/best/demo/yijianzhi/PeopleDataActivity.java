@@ -50,7 +50,9 @@ public class PeopleDataActivity extends AppCompatActivity {
         md_btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(PeopleDataActivity.this,RenZhengActivity.class);
+                startActivity(intent);
+                PeopleDataActivity.this.finish();
             }
         });
         final BmobQuery<User> bmob1 = new BmobQuery<>();

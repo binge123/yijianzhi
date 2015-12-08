@@ -94,7 +94,7 @@
     <orderEntry type="library" exported="" name="pinyin4j-2.5.0" level="project" />
     <orderEntry type="library" exported="" name="AMap_3DMap_v2.6.0_20150914" level="project" />
     <orderEntry type="library" exported="" name="locSDK_3.1" level="project" />
-    <orderEntry type="library" exported="" name="okhttp-2.4.0" level="project" />
+    <orderEntry type="library" exported="" name="picasso-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="pushservice-4.5.6.88" level="project" />
     <orderEntry type="library" exported="" name="ultra-ptr-1.0.10" level="project" />
     <orderEntry type="library" exported="" name="AMap_Location_v2.0.0_20151117" level="project" />
@@ -104,8 +104,8 @@
     <orderEntry type="library" exported="" name="bmob-sms-1.0.1" level="project" />
     <orderEntry type="library" exported="" name="support-v4-23.0.0" level="project" />
     <orderEntry type="library" exported="" name="baidumapapi_v2_1_2" level="project" />
-    <orderEntry type="library" exported="" name="okio-1.4.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.0.0" level="project" />
     <orderEntry type="module" module-name="wchat_pulltorefresh" exported="" />
+    <orderEntry type="module" module-name="multi-image-selector" exported="" />
   </component>
 </module>

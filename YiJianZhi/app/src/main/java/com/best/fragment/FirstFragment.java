@@ -141,7 +141,6 @@ public class FirstFragment extends Fragment implements View.OnClickListener{
         final BmobQuery<RecruitTable> bq= new BmobQuery<>();
         ptr = (PtrClassicFrameLayout) v.findViewById(R.id.rotate_header_list_view_frame);
         ptr.setLastUpdateTimeRelateObject(this);
-
         ptr.setPtrHandler(new PtrHandler() {
             @Override
             public void onRefreshBegin(PtrFrameLayout frame) {
@@ -196,6 +195,7 @@ public class FirstFragment extends Fragment implements View.OnClickListener{
                 startActivity(intent);
             }
         });
+
         //toolbar上的定位TextView
         textView = (TextView) v.findViewById(R.id.t_textView);
         textView.setText("临沂");

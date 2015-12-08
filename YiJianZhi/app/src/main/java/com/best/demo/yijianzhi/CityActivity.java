@@ -480,46 +480,46 @@ public class CityActivity extends Activity implements AbsListView.OnScrollListen
                 convertView = inflater.inflate(R.layout.frist_list_item, null);
                 TextView locateHint = (TextView) convertView
                         .findViewById(R.id.locateHint);
-                city = (TextView) convertView.findViewById(R.id.lng_city);
-                city.setOnClickListener(new OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if (locateProcess == 2) {
-                            intent.putExtra("test",city.getText().toString());
-                            intent.putExtra("index",1);
-                            startActivity(intent);
-                            Toast.makeText(getApplicationContext(),
-                                    city.getText().toString(),
-                                    Toast.LENGTH_SHORT).show();
-                        } else if (locateProcess == 3) {
-                            locateProcess = 1;
-                            personList.setAdapter(adapter);
-                            adapter.notifyDataSetChanged();
-                            mLocationClient.stop();
-                            isNeedFresh = true;
-                            InitLocation();
-                            currentCity = "";
-                            mLocationClient.start();
-                        }
-                    }
-                });
-                ProgressBar pbLocate = (ProgressBar) convertView
-                        .findViewById(R.id.pbLocate);
+//                city = (TextView) convertView.findViewById(R.id.lng_city);
+//                city.setOnClickListener(new OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        if (locateProcess == 2) {
+//                            intent.putExtra("test",city.getText().toString());
+//                            intent.putExtra("index",1);
+//                            startActivity(intent);
+//                            Toast.makeText(getApplicationContext(),
+//                                    city.getText().toString(),
+//                                    Toast.LENGTH_SHORT).show();
+//                        } else if (locateProcess == 3) {
+//                            locateProcess = 1;
+//                            personList.setAdapter(adapter);
+//                            adapter.notifyDataSetChanged();
+//                            mLocationClient.stop();
+//                            isNeedFresh = true;
+//                            InitLocation();
+//                            currentCity = "";
+//                            mLocationClient.start();
+//                        }
+//                    }
+//                });
+             //   ProgressBar pbLocate = (ProgressBar) convertView
+              //          .findViewById(R.id.pbLocate);
                 if (locateProcess == 1) { // 正在定位
-                    locateHint.setText("正在定位");
-                    city.setVisibility(View.GONE);
-                    pbLocate.setVisibility(View.VISIBLE);
+                 //   locateHint.setText("正在定位");
+                  //  city.setVisibility(View.GONE);
+                  //  pbLocate.setVisibility(View.VISIBLE);
                 } else if (locateProcess == 2) { // 定位成功
-                    locateHint.setText("当前定位城市");
-                    city.setVisibility(View.VISIBLE);
-                    city.setText(currentCity);
+//                    locateHint.setText("当前定位城市");
+//                    city.setVisibility(View.VISIBLE);
+//                    city.setText(currentCity);
                     mLocationClient.stop();
-                    pbLocate.setVisibility(View.GONE);
+                    //pbLocate.setVisibility(View.GONE);
                 } else if (locateProcess == 3) {
-                    locateHint.setText("未定位到城市,请选择");
-                    city.setVisibility(View.VISIBLE);
-                    city.setText("重新选择");
-                    pbLocate.setVisibility(View.GONE);
+//                    locateHint.setText("未定位到城市,请选择");
+//                    city.setVisibility(View.VISIBLE);
+//                    city.setText("重新选择");
+//                    pbLocate.setVisibility(View.GONE);
                 }
             } else if (viewType == 1) { // 最近访问城市
                 convertView = inflater.inflate(R.layout.recent_city, null);
