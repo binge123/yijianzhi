@@ -2,11 +2,123 @@
 <items version="2" >
 
     <item
-        jar="E:\xiangmu\yijianzhi\YiJianZhi\app\src\main\jniLibs\pushservice-4.5.6.88.jar"
+        jar="E:\xiangmu\YiJianZhi\app\libs\locSDK_3.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="09224a1883da8b5bd37e766f4fab80570d879898">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\locSDK_3.1-9aeac182a533bb922bc2042c01ea24f8fae6caf2.jar" />
+    </item>
+    <item
+        jar="E:\xiangmu\YiJianZhi\app\build\intermediates\exploded-aar\YiJianZhi\wchat_pulltorefresh\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="a5fd597b13917e6a7be0b85907947a5b33fe99e1">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\classes-f3411065899e376582680717fca55f526ac2d8fc.jar" />
+    </item>
+    <item
+        jar="E:\xiangmu\YiJianZhi\app\libs\AMap_Location_v2.0.0_20151117.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="fbd0189f0d86bbfa558b2c2344ea3f3932a2ad35">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\AMap_Location_v2.0.0_20151117-e8889adf9bc2a2cf80f1e7b992fedd6df8ca53c6.jar" />
+    </item>
+    <item
+        jar="E:\xiangmu\YiJianZhi\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-c54dd2dbb2931d67b0ec673940b2d5ed69d61fac.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator.WIN-OU8RQGJIKK8\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.4.0\5b72bf48563ea8410e650de14aa33ff69a3e8c35\okio-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\okio-1.4.0-2026352ec23b6a4f92a0b96f146be66bc8a08ef3.jar" />
+    </item>
+    <item
+        jar="E:\xiangmu\YiJianZhi\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\classes-a24f93952dcc92b0ce0273b833599fe7f62d53c2.jar" />
+    </item>
+    <item
+        jar="E:\xiangmu\YiJianZhi\app\libs\pinyin4j-2.5.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\pinyin4j-2.5.0-02923592ea7b78cd5b248fb2b7caefbb88dd555d.jar" />
+    </item>
+    <item
+        jar="E:\xiangmu\YiJianZhi\app\libs\pinyin4android1.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="7e40ba730db63df392311604fcd958abc61e34fe">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\pinyin4android1.0-468333262a48011a77b104b3cc515451650cb775.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator.WIN-OU8RQGJIKK8\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.4.0\40340c0748190fe897baf7bffbc1b282734294e5\okhttp-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\okhttp-2.4.0-ee64fbf8e43b42094ad59c099ee4a700f62b4bbd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator.WIN-OU8RQGJIKK8\.gradle\caches\modules-2\files-2.1\cn.bmob.android\bmob-sms\1.0.1\df9db564e2842696a68deca39b0186aebf3dc07c\bmob-sms-1.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="df9db564e2842696a68deca39b0186aebf3dc07c">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\bmob-sms-1.0.1-e7c1a874d73f7e7af96a25f3af620712853e4934.jar" />
+    </item>
+    <item
+        jar="D:\Users\Administrator.WIN-OU8RQGJIKK8\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-9eb2c730dab9e2812901ff152ff424f0cf33869c.jar" />
+    </item>
+    <item
+        jar="E:\xiangmu\YiJianZhi\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\classes-871bb42a637fcee6c132bbb0834628585f278643.jar" />
+    </item>
+    <item
+        jar="E:\xiangmu\YiJianZhi\app\libs\baidumapapi_v2_1_2.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4f30d13f4864e0a20c53ae08b01a0749b5668c0e">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\baidumapapi_v2_1_2-1c8de810db06d40707b949b4e7429aeff1e476ed.jar" />
+    </item>
+    <item
+        jar="E:\xiangmu\YiJianZhi\app\src\main\jniLibs\pushservice-4.5.6.88.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="d5fe0ed3ebaf5ee8f6bc3804af89f51abfa73e1b">
-        <dex dex="E:\xiangmu\yijianzhi\YiJianZhi\app\build\intermediates\pre-dexed\debug\pushservice-4.5.6.88-0ea1f744c257cb2366b58d3e3b7d2afe7bd330e3.jar" />
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\pushservice-4.5.6.88-7a2778f7bc941524b9a861266029efb22cce165f.jar" />
+    </item>
+    <item
+        jar="E:\xiangmu\YiJianZhi\app\build\intermediates\exploded-aar\in.srain.cube\ultra-ptr\1.0.10\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="f7aa9a64408679b54260b859ae8eb723b69ecd30">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\classes-ac7f34f1ba7a4d627eb67196009482b85d3283cf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator.WIN-OU8RQGJIKK8\.gradle\caches\modules-2\files-2.1\cn.bmob.android\bmob-sdk\3.4.5\44e559d18fd5a4826b0a4c0354308213e4f658a2\bmob-sdk-3.4.5.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="44e559d18fd5a4826b0a4c0354308213e4f658a2">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\bmob-sdk-3.4.5-875d76c3d842f7cf443e18c6b5df2b9195bcbf3f.jar" />
+    </item>
+    <item
+        jar="E:\xiangmu\YiJianZhi\app\libs\AMap_3DMap_v2.6.0_20150914.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="5723f613d0bd1fb0c0e7025f09e091f62aff02e8">
+        <dex dex="E:\xiangmu\YiJianZhi\app\build\intermediates\pre-dexed\debug\AMap_3DMap_v2.6.0_20150914-5883ad54f1147b864a9e214691ce3c95952a982d.jar" />
     </item>
 
 </items>

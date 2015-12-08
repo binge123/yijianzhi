@@ -2,54 +2,68 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.best.demo.yijianzhi.Searchpage_Activity"
+    android:background="#eee"
     >
 
 
-    <LinearLayout
+    <RelativeLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:background="#3191E8"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:weightSum="1"
         android:id="@+id/linearLayout"
         android:padding="8dp">
 
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:id="@+id/s_image"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
             android:background="@drawable/fanhui"/>
 
         <EditText
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/editText3"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:id="@+id/s_kuang"
+            android:layout_alignTop="@id/s_image"
+            android:layout_alignBottom="@id/s_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/s_image"
+            android:layout_toLeftOf="@+id/s_text"
+            android:layout_marginRight="20dp"
             android:background="@drawable/search" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:text="搜索"
             android:textSize="15sp"
             android:layout_gravity="center_vertical"
             android:id="@+id/s_text"
             android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:onClick="sousuo"
             android:background="@null"/>
-    </LinearLayout>
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/s_rl"
+        android:layout_below="@+id/linearLayout">
     <LinearLayout
         android:id="@+id/line1"
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="60dp"
-        android:layout_below="@+id/linearLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
         <TextView
@@ -94,109 +108,6 @@
         </GridView>
     </LinearLayout>
 
-    <!--<LinearLayout-->
-    <!--android:id="@+id/line3"-->
-    <!--android:orientation="horizontal"-->
-    <!--android:layout_width="fill_parent"-->
-    <!--android:layout_height="200dp"-->
-    <!--android:layout_below="@+id/linearLayout2"-->
-    <!--android:layout_alignLeft="@+id/line1"-->
-    <!--android:layout_alignStart="@+id/line1">-->
-
-    <!--<LinearLayout-->
-    <!--android:orientation="vertical"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:layout_height="200dp">-->
-    <!--<Button-->
-    <!--android:id="@+id/button1"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:text="月嫂"-->
-    <!--android:layout_height="wrap_content" />-->
-    <!--<Button-->
-    <!--android:id="@+id/button2"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:text="物流人员"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_height="wrap_content" />-->
-    <!--<Button-->
-    <!--android:id="@+id/button3"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:text="服务员"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_height="wrap_content" />-->
-
-    <!--</LinearLayout>-->
-    <!--<LinearLayout-->
-    <!--android:orientation="vertical"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:layout_height="200dp">-->
-    <!--<Button-->
-    <!--android:id="@+id/button4"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:text="大堂经理"-->
-    <!--android:layout_height="wrap_content" />-->
-    <!--<Button-->
-    <!--android:id="@+id/button5"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:text="厨师"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_height="wrap_content" />-->
-    <!--<Button-->
-    <!--android:id="@+id/button6"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:text="保安"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_height="wrap_content" />-->
-
-    <!--</LinearLayout>-->
-    <!--<LinearLayout-->
-    <!--android:orientation="vertical"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:layout_height="200dp">-->
-    <!--<Button-->
-    <!--android:id="@+id/button7"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:text="发传单"-->
-    <!--android:layout_height="wrap_content" />-->
-    <!--<Button-->
-    <!--android:id="@+id/button8"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:text="IT"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_height="wrap_content" />-->
-    <!--<Button-->
-    <!--android:id="@+id/button9"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:text="快餐"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_height="wrap_content" />-->
-
-    <!--</LinearLayout>-->
-    <!--</LinearLayout>-->
     <View
         android:layout_width="fill_parent"
         android:background="#ccc"
@@ -230,85 +141,6 @@
         android:layout_below="@+id/line6"
         android:layout_height="2dp"
         android:id="@+id/textView4" />
-    <!--<LinearLayout-->
-    <!--android:layout_width="fill_parent"-->
-    <!--android:layout_below="@+id/textView4"-->
-    <!--android:layout_marginTop="10dp"-->
-    <!--android:layout_height="140dp">-->
-    <!--<LinearLayout-->
-    <!--android:orientation="vertical"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:layout_height="200dp">-->
-    <!--<Button-->
-    <!--android:id="@+id/button10"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:text="服务员"-->
-    <!--android:layout_height="wrap_content" />-->
-    <!--<Button-->
-    <!--android:id="@+id/button11"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:text="厨师"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_height="wrap_content" />-->
-
-    <!--</LinearLayout>-->
-
-    <!--<LinearLayout-->
-    <!--android:orientation="vertical"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:layout_height="200dp">-->
-    <!--<Button-->
-    <!--android:id="@+id/button12"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:text="发传单"-->
-    <!--android:layout_height="wrap_content" />-->
-    <!--<Button-->
-    <!--android:id="@+id/button13"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:text="安卓开发"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_height="wrap_content" />-->
-
-    <!--</LinearLayout>-->
-
-
-    <!--<LinearLayout-->
-    <!--android:orientation="vertical"-->
-    <!--android:layout_width="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:layout_height="200dp">-->
-    <!--<Button-->
-    <!--android:id="@+id/button14"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:text="物流"-->
-    <!--android:layout_height="wrap_content" />-->
-    <!--<Button-->
-    <!--android:id="@+id/button15"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_marginTop="12dp"-->
-    <!--android:text="PHP开发"-->
-    <!--android:layout_marginLeft="20dp"-->
-    <!--android:background="@drawable/bei_jing"-->
-    <!--android:layout_height="wrap_content" />-->
-
-    <!--</LinearLayout>-->
-
-    <!--</LinearLayout>-->
 
     <LinearLayout
         android:id="@+id/line4"
@@ -332,4 +164,14 @@
             android:layout_alignStart="@+id/line1">
         </GridView>
     </LinearLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout">
+    <com.best.bean.MyListViewForScollProblem
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/s_list"></com.best.bean.MyListViewForScollProblem>
+    </ScrollView>
 </RelativeLayout>

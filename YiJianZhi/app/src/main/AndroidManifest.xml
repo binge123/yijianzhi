@@ -39,23 +39,28 @@
         </activity>
         <activity
             android:name=".ZhuCeActivity"
-            android:label="@string/title_activity_zhu_ce" >
+            android:label="@string/title_activity_zhu_ce"
+            android:theme="@style/MyActionBar">
         </activity>
         <activity
             android:name=".RecruitActivity"
-            android:label="@string/title_activity_recruit" >
+            android:label="@string/title_activity_recruit"
+            android:theme="@style/MyActionBar">
         </activity>
         <activity
             android:name=".ShanpingActivity"
-            android:label="@string/title_activity_shanping" >
+            android:label="@string/title_activity_shanping"
+            android:theme="@style/MyActionBar">
         </activity>
         <activity
             android:name=".MoreActivity"
-            android:label="MoreActivity" >
+            android:label="MoreActivity"
+            android:theme="@style/MyActionBar">
         </activity>
         <activity
             android:name=".Splashscreen"
-            android:label="@string/title_activity_splashscreen" >
+            android:label="@string/title_activity_splashscreen"
+            android:theme="@style/MyActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -69,40 +74,50 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="LoginActivity" >
+            android:label="LoginActivity"
+            android:theme="@style/MyActionBar">
         </activity>
         <activity
             android:name=".ShouCangActivity"
-            android:label="ShouCangActivity" >
+            android:label="ShouCangActivity"
+            android:theme="@style/MyActionBar">
         </activity>
         <activity
             android:name=".MyFaBuActivity"
-            android:label="MyFaBuActivity" >
+            android:label="MyFaBuActivity"
+            android:theme="@style/MyActionBar">
         </activity>
         <activity
             android:name=".QiuZhiActivity"
-            android:label="QiuZhiActivity" >
+            android:label="QiuZhiActivity"
+            android:theme="@style/MyActionBar">
         </activity>
         <activity
             android:name=".ZiLiaoActivity"
-            android:label="ZiLiaoActivity" >
+            android:label="ZiLiaoActivity"
+            android:theme="@style/MyActionBar">
         </activity>
         <activity
             android:name=".CityActivity"
-            android:label="CityActivity" >
+            android:label="CityActivity"
+            android:theme="@style/MyActionBar">
         </activity>
         <activity
             android:name=".FirstXuanXiangActivity"
-            android:label="@string/title_activity_first_xuan_xiang" >
+            android:label="@string/title_activity_first_xuan_xiang"
+            android:theme="@style/MyActionBar">
         </activity>
         <activity android:name=".ZhaoPinXiangQingActivity" >
         </activity>
         <activity
             android:name=".SearchActivity"
-            android:label="@string/title_activity_search" >
+            android:label="@string/title_activity_search"
+            android:theme="@style/MyActionBar">
         </activity>
-        <activity android:name=".JianLiXiangQingActivity"></activity>
-
+        <activity android:name=".JianLiXiangQingActivity"
+            android:theme="@style/MyActionBar"></activity>
+        <activity android:name=".PeopleDataActivity"
+            android:theme="@style/MyActionBar"></activity>
 
 
         <!-- 用于接收系统消息以保证PushService正常运行 -->

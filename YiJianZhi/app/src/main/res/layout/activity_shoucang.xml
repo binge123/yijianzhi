@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/sc_Rly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="#3191E8">
+        <ImageView
+            android:id="@+id/Iv1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="mFanHui"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/fanhui"/>
+        <TextView
+            android:id="@+id/Tv1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="我的发布"
+            android:textSize="20sp"
+            android:textColor="#fff"/>
+    </RelativeLayout>
     <ListView
         android:layout_width="fill_parent"
+        android:layout_below="@id/sc_Rly1"
         android:layout_height="fill_parent"
         android:id="@+id/shoucang_list">
 

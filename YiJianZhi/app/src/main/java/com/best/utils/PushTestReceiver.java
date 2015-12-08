@@ -54,7 +54,11 @@ public class PushTestReceiver extends PushMessageReceiver {
 
     @Override
     public void onNotificationClicked(Context context, String s, String s1, String s2) {
-
+        Intent intent = new Intent();
+        intent.setClass(context.getApplicationContext(),JianLiXiangQingActivity.class);
+//        intent.putExtra("chanelid", channelId);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.getApplicationContext().startActivity(intent);
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.best.demo.yijianzhi;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -30,6 +31,10 @@ public class Guidepage extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guidepage);
         viewPager = (ViewPager) findViewById(R.id.view);
+        SharedPreferences fsp = getSharedPreferences("sp",MODE_PRIVATE);
+        SharedPreferences.Editor feditor= fsp.edit();
+        feditor.putInt("first",1);
+        feditor.commit();
         v1 = LayoutInflater.from(this).inflate(R.layout.viewpagelayout1,null);
         v2 = LayoutInflater.from(this).inflate(R.layout.viewpagelayout2,null);
         v3 = LayoutInflater.from(this).inflate(R.layout.viewpagelayout3,null);

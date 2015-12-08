@@ -10,7 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.best.bean.CompanyPublish;
+import com.best.bean.RecruitTable;
 import com.best.demo.yijianzhi.R;
+import com.best.demo.yijianzhi.TypeView;
 
 import java.util.List;
 
@@ -53,19 +55,28 @@ public class FirstListViewAdapter extends BaseAdapter {
         if(convertView == null){
             viewConvert = new ViewConvert();
             convertView = LayoutInflater.from(context).inflate(R.layout.first_listview_adapterlayout,null);
-            viewConvert.imageView =(ImageView) convertView.findViewById(R.id.first_grvimageView);
-            viewConvert.textView1 =(TextView) convertView.findViewById(R.id.first_gridview_text1);
-            viewConvert.textView2 =(TextView) convertView.findViewById(R.id.first_gridview_text2);
+            viewConvert.imageView =(ImageView) convertView.findViewById(R.id.first_listview_tubiao);
+            viewConvert.textView1 =(TextView) convertView.findViewById(R.id.first_listview_text1);
+            viewConvert.textView2 =(TextView) convertView.findViewById(R.id.first_listview_xinzi);
+            viewConvert.textView3=(TextView) convertView.findViewById(R.id.first_listview_time);
+            viewConvert.textView4 =(TextView) convertView.findViewById(R.id.first_listview_didian);
+//            viewConvert.typeView = (TypeView) convertView.findViewById(R.id.typev);
             convertView.setTag(viewConvert);
         }else {
             viewConvert = (ViewConvert) convertView.getTag();
         }
 
 
-        CompanyPublish cp = (CompanyPublish) list.get(position);
+        RecruitTable cp = (RecruitTable) list.get(position);
         Log.i("text", cp.getTitle());
+//        viewConvert.typeView.setmTypeText(cp.getTitle());
+//        viewConvert.typeView.setmTypeColor(R.color.blue2);
+//        viewConvert.typeView.setmTypeTextSize(12);
         viewConvert.textView1.setText(cp.getTitle());
-        viewConvert.textView2.setText(cp.getMoney());
+        viewConvert.textView2.setText(cp.getWork_money());
+        viewConvert.textView3.setText(cp.getOver_time());
+        viewConvert.textView4.setText(cp.getWork_address());
+
 
 //        iv.setLayoutParams(new GridView.LayoutParams(85,85));
 //        iv.setScaleType(ImageView.ScaleType.CENTER_CROP);
@@ -78,6 +89,7 @@ public class FirstListViewAdapter extends BaseAdapter {
     }
     class ViewConvert{
         ImageView imageView;
-        TextView textView1,textView2;
+        TypeView typeView;
+        TextView textView1,textView2,textView3,textView4;
     }
 }

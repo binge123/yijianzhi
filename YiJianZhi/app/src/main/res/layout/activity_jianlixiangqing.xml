@@ -283,6 +283,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/x_time"
             android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:text="我要报名"
             android:textColor="#fff"
             android:background="#3191E8"
